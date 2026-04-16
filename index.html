@@ -1,1 +1,288 @@
-\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>언어 학습 허브</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n    <header>\n        <h1>언어 학습 허브</h1>\n    </header>\n    <main>\n        <language-card name=\"\ud83c\uddfa\ud83c\uddf8 English\" description=\"글로벌 비즈니스와 문화의 언어\"></language-card>\n        <language-card name=\"\ud83c\udde8\ud83c\uddf3 Chinese\" description=\"세계에서 가장 많은 사람들이 사용하는 언어\"></language-card>\n        <language-card name=\"\ud83c\uddef\ud83c\uddf5 Japanese\" description=\"독특한 문화와 기술의 언어\"></language-card>\n        <language-card name=\"\ud83c\uddf0\ud83c\uddf7 Korean\" description=\"K-문화를 더 깊이 즐기는 열쇠\"></language-card>\n    </main>\n    <footer>\n        <p>&copy; 2024 언어 학습 허브. 모든 권리 보유.</p>\n    </footer>\n    <script src=\"main.js\"></script>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Language Learning Hub</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #3b82f6;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent-kr: #10b981;
+            --accent-en: #3b82f6;
+            --accent-cn: #ef4444;
+            --accent-jp: #ec4899;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #60a5fa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Language Selector Grid */
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .lang-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lang-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+        }
+
+        .lang-card .flag {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .lang-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        /* Lesson View Section */
+        #lesson-view {
+            display: none;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 2rem;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lesson-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+        }
+
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .phrase-card .cat {
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .phrase-card .orig {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .phrase-card .pron {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .phrase-card .trans {
+            color: var(--text-main);
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            color: var(--text-dim);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Global Language Hub</h1>
+    <p class="subtitle">배우고 싶은 언어를 선택하여 학습을 시작하세요.</p>
+</header>
+
+<div class="container">
+    <div class="lang-grid">
+        <div class="lang-card" onclick="showLesson('kr')" style="border-bottom: 4px solid var(--accent-kr);">
+            <span class="flag">🇰🇷</span>
+            <h3>한국어 (Korean)</h3>
+        </div>
+        <div class="lang-card" onclick="showLesson('en')" style="border-bottom: 4px solid var(--accent-en);">
+            <span class="flag">🇺🇸</span>
+            <h3>영어 (English)</h3>
+        </div>
+        <div class="lang-card" onclick="showLesson('cn')" style="border-bottom: 4px solid var(--accent-cn);">
+            <span class="flag">🇨🇳</span>
+            <h3>중국어 (Chinese)</h3>
+        </div>
+        <div class="lang-card" onclick="showLesson('jp')" style="border-bottom: 4px solid var(--accent-jp);">
+            <span class="flag">🇯🇵</span>
+            <h3>일본어 (Japanese)</h3>
+        </div>
+    </div>
+
+    <section id="lesson-view">
+        <div class="lesson-header">
+            <span id="target-flag" style="font-size: 2.5rem;"></span>
+            <h2 id="target-title" style="font-size: 2rem;"></h2>
+        </div>
+        <div id="lesson-content" class="lesson-grid">
+            <!-- Dynamic Content -->
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Global Language Learning Hub. <br> 모든 기기에서 최적화되어 작동합니다.</p>
+</footer>
+
+<script>
+    const data = {
+        'kr': {
+            title: 'Korean Lesson',
+            flag: '🇰🇷',
+            color: '#10b981',
+            phrases: [
+                { cat: '필수', orig: '안녕하세요', pron: '[An-nyeong-ha-se-yo]', trans: 'Hello / Good day' },
+                { cat: '필수', orig: '감사합니다', pron: '[Gam-sa-ham-ni-da]', trans: 'Thank you' },
+                { cat: '여행', orig: '화장실이 어디예요?', pron: '[Hwa-jang-sil eo-di-ye-yo?]', trans: 'Where is the restroom?' },
+                { cat: '여행', orig: '이거 얼마예요?', pron: '[I-geo eol-ma-ye-yo?]', trans: 'How much is this?' },
+                { cat: '음식', orig: '물 좀 주세요', pron: '[Mul jom ju-se-yo]', trans: 'Water, please' },
+                { cat: '음식', orig: '맛있어요!', pron: '[Ma-si-sseo-yo!]', trans: 'It\'s delicious!' }
+            ]
+        },
+        'en': {
+            title: 'English Lesson',
+            flag: '🇺🇸',
+            color: '#3b82f6',
+            phrases: [
+                { cat: 'Basic', orig: 'Hello / Hi', pron: '[헬로우 / 하이]', trans: '안녕하세요' },
+                { cat: 'Basic', orig: 'Nice to meet you', pron: '[나이스 투 미트 유]', trans: '만나서 반가워요' },
+                { cat: 'Travel', orig: 'Where is the station?', pron: '[웨어 이즈 더 스테이션?]', trans: '역이 어디인가요?' },
+                { cat: 'Travel', orig: 'Could you help me?', pron: '[쿠쥬 헬프 미?]', trans: '도와주실 수 있나요?' },
+                { cat: 'Food', orig: 'Check, please', pron: '[체크 플리즈]', trans: '계산서 좀 주세요' },
+                { cat: 'Food', orig: 'I\'m hungry', pron: '[아임 헝그리]', trans: '배고파요' }
+            ]
+        },
+        'cn': {
+            title: 'Chinese Lesson',
+            flag: '🇨🇳',
+            color: '#ef4444',
+            phrases: [
+                { cat: '基础', orig: '你好 (Nǐ hǎo)', pron: '[니 하오]', trans: '안녕하세요' },
+                { cat: '基础', orig: '谢谢 (Xièxiè)', pron: '[씨에씨에]', trans: '감사합니다' },
+                { cat: '旅游', orig: '多少钱? (Duōshǎo qián?)', pron: '[뚜오샤오 치엔]', trans: '얼마예요?' },
+                { cat: '旅游', orig: '好 (Hǎo)', pron: '[하오]', trans: '좋아요 / 알겠습니다' },
+                { cat: '饮食', orig: '我想喝水 (Wǒ xiǎng hē shuǐ)', pron: '[워 샹 허 슈이]', trans: '물 마시고 싶어요' },
+                { cat: '饮食', orig: '太棒了 (Tài bàng le)', pron: '[타이 빵 러]', trans: '최고예요!' }
+            ]
+        },
+        'jp': {
+            title: 'Japanese Lesson',
+            flag: '🇯🇵',
+            color: '#ec4899',
+            phrases: [
+                { cat: '基本', orig: 'こんにちは (Konnichiwa)', pron: '[곤니찌와]', trans: '안녕하세요' },
+                { cat: '基本', orig: 'ありがとう (Arigatō)', pron: '[아리가또]', trans: '감사합니다' },
+                { cat: '旅行', orig: 'いくらですか? (Ikura desu ka?)', pron: '[이크라데스까]', trans: '얼마입니까?' },
+                { cat: '旅行', orig: 'すみません (Sumimasen)', pron: '[스미마셍]', trans: '실례합니다 / 저기요' },
+                { cat: '食事', original: 'おいしいです (Oishii desu)', pron: '[오이시이데스]', trans: '맛있습니다' },
+                { cat: '食事', original: 'いただきます (Itadakimasu)', pron: '[이따다끼마스]', trans: '잘 먹겠습니다' }
+            ]
+        }
+    };
+
+    function showLesson(lang) {
+        const langData = data[lang];
+        const view = document.getElementById('lesson-view');
+        const content = document.getElementById('lesson-content');
+        const flag = document.getElementById('target-flag');
+        const title = document.getElementById('target-title');
+
+        flag.innerText = langData.flag;
+        title.innerText = langData.title;
+        title.style.color = langData.color;
+
+        content.innerHTML = langData.phrases.map(p => `
+            <div class="phrase-card" style="border-left-color: ${langData.color};">
+                <span class="cat" style="color: ${langData.color};">${p.cat}</span>
+                <div class="orig">${p.orig}</div>
+                <div class="pron">${p.pron}</div>
+                <div class="trans">${p.trans}</div>
+            </div>
+        `).join('');
+
+        view.style.display = 'block';
+        view.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+
+</body>
+</html>
