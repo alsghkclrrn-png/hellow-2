@@ -12,34 +12,26 @@ const languageData = {
             { type: '모음', items: 'ㅏ, ㅑ, ㅓ, ㅕ, ㅗ, ㅛ, ㅜ, ㅠ, ㅡ, ㅣ', desc: '한글의 기본이 되는 10개의 모음입니다.' }
         ],
         numbers: [
-            { num: '1', word: '일 (Sino) / 하나 (Native)', pronunciation: '[일 / 하나]' },
-            { num: '2', word: '이 (Sino) / 둘 (Native)', pronunciation: '[이 / 둘]' },
-            { num: '3', word: '삼 (Sino) / 셋 (Native)', pronunciation: '[삼 / 섿]' },
-            { num: '4', word: '사 (Sino) / 넷 (Native)', pronunciation: '[사 / 넫]' },
-            { num: '5', word: '오 (Sino) / 다섯 (Native)', pronunciation: '[오 / 다섯]' },
-            { num: '6', word: '육 (Sino) / 여섯 (Native)', pronunciation: '[육 / 여섣]' },
-            { num: '7', word: '칠 (Sino) / 일곱 (Native)', pronunciation: '[칠 / 일곱]' },
-            { num: '8', word: '팔 (Sino) / 여덟 (Native)', pronunciation: '[팔 / 여덜]' },
-            { num: '9', word: '구 (Sino) / 아홉 (Native)', pronunciation: '[구 / 아홉]' },
-            { num: '10', word: '십 (Sino) / 열 (Native)', pronunciation: '[십 / 열]' }
+            { num: '10~90', word: '열, 스물, 서른, 마흔, 쉰, 예순, 일흔, 여든, 아흔', pronunciation: '[Native Units]' },
+            { num: '100', word: '백 (Baek)', pronunciation: '[백]' },
+            { num: '1,000', word: '천 (Cheon)', pronunciation: '[천]' },
+            { num: '10,000', word: '만 (Man)', pronunciation: '[만]' },
+            { num: '10^8', word: '억 (Eok)', pronunciation: '[억]' },
+            { num: '10^12', word: '조 (Jo)', pronunciation: '[조]' }
         ],
         vocabulary: [
             { word: '회의 (Meeting)', translation: '여럿이 모여 의견을 나눔', pronunciation: '[회의/회이]' },
-            { word: '성공 (Success)', translation: '목적한 바를 이룸', pronunciation: '[성공]' },
-            { word: '혁신 (Innovation)', translation: '새롭게 바꿈', pronunciation: '[혁씬]' },
-            { word: '도전 (Challenge)', pronunciation: '[도전]', translation: '어려운 일에 맞섬' }
+            { word: '성공 (Success)', translation: '목적한 바를 이룸', pronunciation: '[성공]' }
         ],
         grammar: [
-            { rule: '-은/는', description: '문장의 주제나 대상을 나타내는 보조사', example: '저는 학생입니다.' },
-            { rule: '-이/가', description: '문장의 주어를 나타내는 격 조사', example: '친구가 옵니다.' }
+            { rule: '-은/는', description: '문장의 주제나 대상을 나타내는 보조사', example: '저는 학생입니다.' }
         ],
         deepGrammar: [
-            { title: '은/는 vs 이/가 완벽 구분', content: '은/는은 대조나 주제를 나타낼 때 사용합니다. 반면 이/가 는 특정 사실이나 주어를 강조할 때 씁니다.', tip: '자기소개할 때는 "저는 ~입니다"가 자연스러워요!' },
-            { title: '한국어의 이중 숫자 체계', content: '한국어는 한자어(일,이,삼)와 순우리말(하나,둘,셋) 두 가지 방식을 씁니다. 날짜, 돈, 분은 한자어를 쓰고, 나이와 시(Hour)는 순우리말을 씁니다.', tip: '시간을 말할 때 "1시 30분"은 "한 시 삼십 분"이라고 읽어요!' }
+            { title: '한국어 큰 숫자 읽기 법칙', content: '한국어는 서양의 3자리(Thousand) 단위와 달리 4자리(만, 억, 조) 단위로 숫자가 올라갑니다. 예를 들어 100,000은 "십만"이라고 읽습니다.', tip: '숫자 뒤에 0이 4개 붙을 때마다 단위가 바뀐다고 생각하면 쉬워요!' },
+            { title: '순우리말 숫자의 한계', content: '나이를 셀 때 쓰는 하나, 둘... 아흔아홉(99)까지는 순우리말을 쓰지만, 100(백)부터는 한자어만 사용합니다.', tip: '100살은 "백 살"이라고 합니다.' }
         ],
         conversation: [
-            { phrase: '오늘 회의는 몇 시예요?', translation: '회의 시간을 물어볼 때', pronunciation: '[오늘 회의는 멷 씨예요?]' },
-            { phrase: '제 명함입니다', translation: '비즈니스 첫 인사', pronunciation: '[제 명함임니다]' }
+            { phrase: '이거 얼마예요?', translation: '가격을 물을 때', pronunciation: '[이거 얼마예요?]' }
         ]
     },
     'english': {
@@ -50,29 +42,25 @@ const languageData = {
             { type: 'Alphabet', items: 'A, B, C, D, E...', desc: '영어의 기초 알파벳입니다.' }
         ],
         numbers: [
-            { num: '1', word: 'One', pronunciation: '[원]' },
-            { num: '2', word: 'Two', pronunciation: '[투]' },
-            { num: '3', word: 'Three', pronunciation: '[쓰리]' },
-            { num: '4', word: 'Four', pronunciation: '[포어]' },
-            { num: '5', word: 'Five', pronunciation: '[파이브]' },
-            { num: '6', word: 'Six', pronunciation: '[식스]' },
-            { num: '7', word: 'Seven', pronunciation: '[세븐]' },
-            { num: '8', word: 'Eight', pronunciation: '[에이트]' },
-            { num: '9', word: 'Nine', pronunciation: '[나인]' },
-            { num: '10', word: 'Ten', pronunciation: '[텐]' }
+            { num: '11~19', word: 'Eleven, Twelve, Thirteen... Nineteen', pronunciation: '[일레븐, 트웰브...]' },
+            { num: '20~90', word: 'Twenty, Thirty, Forty, Fifty... Ninety', pronunciation: '[트웬티, 써티...]' },
+            { num: '100', word: 'Hundred', pronunciation: '[헌드레드]' },
+            { num: '1,000', word: 'Thousand', pronunciation: '[싸우전드]' },
+            { num: '1,000,000', word: 'Million', pronunciation: '[밀리언]' },
+            { num: '1,000,000,000', word: 'Billion', pronunciation: '[빌리언]' }
         ],
         vocabulary: [
-            { word: 'Quarterly Report', translation: '분기 보고서', pronunciation: '[쿼터리 리포트]' },
-            { word: 'Deadline', translation: '마감 기한', pronunciation: '[데드라인]' }
+            { word: 'Quarterly Report', translation: '분기 보고서', pronunciation: '[쿼터리 리포트]' }
         ],
         grammar: [
-            { rule: 'Passive Voice', description: '행위의 대상을 강조할 때 사용', example: 'The report was sent.' }
+            { rule: 'Passive Voice', description: '행위의 대상을 강조', example: 'The report was sent.' }
         ],
         deepGrammar: [
-            { title: '기수(Cardinal)와 서수(Ordinal)', content: '개수를 셀 때는 One, Two를 쓰지만, 순서를 말할 때는 First, Second, Third를 씁니다.', tip: '날짜를 말할 때는 항상 서수(May 1st)를 사용하세요!' }
+            { title: '영어의 3자리 콤마 법칙', content: '영어는 3자리마다 이름이 붙습니다. Thousand(1,000), Million(1,000,000), Billion(1,000,000,000). 콤마를 기준으로 읽는 연습을 하세요.', tip: '10,000은 "Ten thousand"라고 읽습니다.' },
+            { title: '13~19 (-teen) vs 30~90 (-ty)', content: '발음이 비슷해서 헷갈리기 쉽습니다. -teen은 뒤에 강세를 세게 주어 길게 발음하고, -ty는 앞을 강하게 발음합니다.', tip: 'Thirteen(13) vs Thirty(30) 발음을 구분해보세요!' }
         ],
         conversation: [
-            { phrase: 'Could you give me more details?', translation: '더 자세히 말씀해 주시겠어요?', pronunciation: '[쿠쥬 기브 미 모어 디테일즈?]' }
+            { phrase: 'How much does it cost?', translation: '비용이 얼마인가요?', pronunciation: '[하우 머치 더즈 잇 코스트?]' }
         ]
     },
     'chinese': {
@@ -83,28 +71,24 @@ const languageData = {
             { type: 'Pinyin', items: 'a, o, e, i, u, ü', desc: '중국어 발음 기호입니다.' }
         ],
         numbers: [
-            { num: '1', word: '一 (Yī)', pronunciation: '[이]' },
-            { num: '2', word: '二 (Èr)', pronunciation: '[얼]' },
-            { num: '3', word: '三 (Sān)', pronunciation: '[싼]' },
-            { num: '4', word: '四 (Sì)', pronunciation: '[쓰]' },
-            { num: '5', word: '五 (Wǔ)', pronunciation: '[우]' },
-            { num: '6', word: '六 (Liù)', pronunciation: '[리우]' },
-            { num: '7', word: '七 (Qī)', pronunciation: '[치]' },
-            { num: '8', word: '八 (Bā)', pronunciation: '[빠]' },
-            { num: '9', word: '九 (Jiǔ)', pronunciation: '[지우]' },
-            { num: '10', word: '十 (Shí)', pronunciation: '[싀]' }
+            { num: '11~99', word: '十一 (Shíyī), 二十 (Èrshí)...', pronunciation: '[십+일, 이+십...]' },
+            { num: '100', word: '百 (Bǎi)', pronunciation: '[빠이]' },
+            { num: '1,000', word: '千 (Qiān)', pronunciation: '[치엔]' },
+            { num: '10,000', word: '万 (Wàn)', pronunciation: '[완]' },
+            { num: '10^8', word: '亿 (Yì)', pronunciation: '[이]' },
+            { num: '10^12', word: '兆 (Zhào)', pronunciation: '[쨔오]' }
         ],
         vocabulary: [
             { word: '项目 (Xiàngmù)', translation: '프로젝트', pronunciation: '[씨앙무]' }
         ],
         grammar: [
-            { rule: '基本语序', description: '주어+동사+목적어 순서', example: '我吃苹果 (나는 사과를 먹는다)' }
+            { rule: '基本语序', description: '주어+동사+목적어', example: '我学中文' }
         ],
         deepGrammar: [
-            { title: '중국어 숫자 손동작', content: '중국에서는 한 손으로 1부터 10까지 모두 표현할 수 있는 독특한 손동작이 있습니다. 특히 6부터 10까지는 모양이 아주 특이하니 익혀두면 시장에서 유용합니다.', tip: '숫자 8은 엄지와 검지를 펼쳐 "총" 모양을 만들어요!' }
+            { title: '중국어 큰 숫자 조합법', content: '한국어와 매우 유사합니다. 만(万), 억(亿) 단위를 그대로 사용합니다. 숫자가 커져도 단위만 알면 그대로 조합해서 읽을 수 있습니다.', tip: '중간에 0이 있으면 "영(零, líng)"이라고 꼭 읽어줘야 하는 경우가 있어요!' }
         ],
         conversation: [
-            { phrase: '合作愉快!', translation: '즐겁게 협력합시다!', pronunciation: '[허쭈오 위콰이]' }
+            { phrase: '一共多少钱?', translation: '전부 얼마인가요?', pronunciation: '[이꽁 뚜오샤오 치엔?]' }
         ]
     },
     'japanese': {
@@ -112,31 +96,27 @@ const languageData = {
         flag: '🇯🇵',
         color: '#ec4899',
         basics: [
-            { type: 'Hiragana', items: 'あ, い, う, え, お...', desc: '일본어의 기본 문자입니다.' }
+            { type: 'Hiragana', items: 'あ, い, 우, 에, 오...', desc: '일본어 기본 문자입니다.' }
         ],
         numbers: [
-            { num: '1', word: '一 (Ichi)', pronunciation: '[이치]' },
-            { num: '2', word: '二 (Ni)', pronunciation: '[니]' },
-            { num: '3', word: '三 (San)', pronunciation: '[산]' },
-            { num: '4', word: '四 (Yon/Shi)', pronunciation: '[욘/시]' },
-            { num: '5', word: '五 (Go)', pronunciation: '[고]' },
-            { num: '6', word: '六 (Roku)', pronunciation: '[로쿠]' },
-            { num: '7', word: '七 (Nana/Shichi)', pronunciation: '[나나/시치]' },
-            { num: '8', word: '八 (Hachi)', pronunciation: '[하치]' },
-            { num: '9', word: '九 (Kyu/Ku)', pronunciation: '[큐/쿠]' },
-            { num: '10', word: '十 (Ju)', pronunciation: '[쥬-]' }
+            { num: '11~99', word: '十一 (Jūichi), 二十 (Nijū)...', pronunciation: '[쥬-이치, 니쥬-...]' },
+            { num: '100', word: '百 (Hyaku)', pronunciation: '[햐쿠]' },
+            { num: '1,000', word: '千 (Sen)', pronunciation: '[센]' },
+            { num: '10,000', word: '万 (Man)', pronunciation: '[만]' },
+            { num: '10^8', word: '億 (Oku)', pronunciation: '[오쿠]' },
+            { num: '10^12', word: '兆 (Chō)', pronunciation: '[쵸-]' }
         ],
         vocabulary: [
             { word: '戦略 (Senryaku)', translation: '전략', pronunciation: '[센랴쿠]' }
         ],
         grammar: [
-            { rule: 'て形', description: '동사 연결 및 부탁', example: '待ってください (기다려 주세요)' }
+            { rule: 'て形', description: '동사 연결', example: '待ってください' }
         ],
         deepGrammar: [
-            { title: '4와 9를 조심하세요', content: '일본에서 숫자 4(시)는 죽음(死)과 발음이 같고, 9(쿠)는 고통(苦)과 발음이 같아 선물이나 병실 번호 등으로 피하는 경향이 있습니다.', tip: '그래서 4는 "욘", 7은 "나나"라고 더 자주 읽는답니다!' }
+            { title: '백, 천 단위의 발음 변화', content: '100(햐쿠)와 1000(센)은 앞에 오는 숫자에 따라 발음이 변합니다. 300은 "산뱌쿠", 800은 "합표쿠"처럼 변하니 주의하세요.', tip: '3,000은 "산젠"이라고 읽습니다!' }
         ],
         conversation: [
-            { phrase: 'よろしくお願いします。', translation: '잘 부탁드립니다.', pronunciation: '[요로시쿠 오네가이시마스]' }
+            { phrase: 'おいくらですか？', translation: '얼마인가요?', pronunciation: '[오이쿠라데스까?]' }
         ]
     },
     'spanish': {
@@ -147,28 +127,25 @@ const languageData = {
             { type: 'Alfabeto', items: 'A, B, C, Ñ...', desc: '스페인어 알파벳입니다.' }
         ],
         numbers: [
-            { num: '1', word: 'Uno', pronunciation: '[우노]' },
-            { num: '2', word: 'Dos', pronunciation: '[도스]' },
-            { num: '3', word: 'Tres', pronunciation: '[뜨레스]' },
-            { num: '4', word: 'Cuatro', pronunciation: '[꾸아뜨로]' },
-            { num: '5', word: 'Cinco', pronunciation: '[씬꼬]' },
-            { num: '6', word: 'Seis', pronunciation: '[세이스]' },
-            { num: '7', word: 'Siete', pronunciation: '[씨에떼]' },
-            { num: '8', word: 'Ocho', pronunciation: '[오쵸]' },
-            { num: '9', word: 'Nueve', pronunciation: '[누에베]' },
-            { num: '10', word: 'Diez', pronunciation: '[디에스]' }
+            { num: '11~15', word: 'Once, Doce, Trece, Catorce, Quince', pronunciation: '[온쎄, 도쎄, 뜨렛쎄, 까또르쎄, 낀쎄]' },
+            { num: '20, 30', word: 'Veinte, Treinta', pronunciation: '[베인떼, 뜨레인따]' },
+            { num: '100', word: 'Cien / Ciento', pronunciation: '[씨엔 / 씨엔또]' },
+            { num: '1,000', word: 'Mil', pronunciation: '[밀]' },
+            { num: '1,000,000', word: 'Un millón', pronunciation: '[운 밀리온]' },
+            { num: '10^12', word: 'Un billón', pronunciation: '[운 빌리온]' }
         ],
         vocabulary: [
             { word: 'Empresa', translation: '회사', pronunciation: '[엠쁘레사]' }
         ],
         grammar: [
-            { rule: 'Género', description: '남성/여성 명사 구분', example: 'El sol / La luna' }
+            { rule: 'Género', description: '남성/여성 명사', example: 'El sol / La luna' }
         ],
         deepGrammar: [
-            { title: '숫자 Uno의 변화', content: '숫자 1(Uno)은 뒤에 남성 명사가 오면 "Un"으로 변합니다. (예: Un libro). 여성 명사 앞에서는 "Una"가 됩니다.', tip: '서수를 말할 때도 Primero가 Primer로 변하는 규칙이 비슷해요!' }
+            { title: '스페인어 11~15의 독특함', content: '스페인어는 11부터 15까지 고유한 단어를 사용하고, 16부터는 Dieci... (10과 ...) 형태로 조합합니다.', tip: '16은 Dieciséis(디에씨세이스)라고 합니다.' },
+            { title: 'Billion의 함정', content: '스페인어의 "Billón"은 영어의 Billion(10억)이 아니라 Trillion(1조)을 의미하는 경우가 많아 비즈니스 시 주의가 필요합니다.', tip: '보통 백만(Millón) 단위로 계산하는 것이 안전합니다.' }
         ],
         conversation: [
-            { phrase: '¡Mucho gusto!', translation: '만나서 반가워요!', pronunciation: '[무쵸 구스또]' }
+            { phrase: '¿Cuánto cuesta esto?', translation: '이것은 얼마인가요?', pronunciation: '[꽌또 꾸에스따 에스또?]' }
         ]
     }
 };
@@ -246,7 +223,7 @@ class LanguageCard extends HTMLElement {
                 <div class="glow"></div>
                 <span class="flag">${data.flag}</span>
                 <h3>${data.title}</h3>
-                <p>기초, 숫자, 단어, 문법, 회화</p>
+                <p>기초, 숫자 단위, 단어, 문법</p>
             </div>
         `;
 
@@ -376,7 +353,7 @@ class LessonHub extends HTMLElement {
                     padding: 0.1rem 0.4rem;
                     border-radius: 0.3rem;
                 }
-                .info-value { font-size: 1rem; color: #e2e8f0; font-weight: 500; }
+                .info-value { font-size: 1.1rem; color: #e2e8f0; font-weight: 600; }
                 .pronunciation { color: #94a3b8; font-style: italic; }
                 
                 .example-box {
@@ -422,7 +399,7 @@ class LessonHub extends HTMLElement {
                 </div>
                 <div class="tabs">
                     <div class="tab ${this.currentCategory === 'basics' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('basics')">기초</div>
-                    <div class="tab ${this.currentCategory === 'numbers' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('numbers')">숫자</div>
+                    <div class="tab ${this.currentCategory === 'numbers' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('numbers')">숫자 단위</div>
                     <div class="tab ${this.currentCategory === 'vocabulary' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('vocabulary')">단어장</div>
                     <div class="tab ${this.currentCategory === 'grammar' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('grammar')">문법</div>
                     <div class="tab ${this.currentCategory === 'deepGrammar' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('deepGrammar')">상세 문법</div>
@@ -473,11 +450,11 @@ class LessonHub extends HTMLElement {
             } else if (this.currentCategory === 'numbers') {
                 return `
                     <div class="item-card">
-                        <span class="badge">Number ${item.num}</span>
+                        <span class="badge">Unit: ${item.num}</span>
                         <div class="main-text">${item.word}</div>
                         <div class="content-box">
                             <div class="info-row">
-                                <span class="info-label">발음</span>
+                                <span class="info-label">읽기</span>
                                 <span class="info-value pronunciation">${item.pronunciation}</span>
                             </div>
                         </div>
