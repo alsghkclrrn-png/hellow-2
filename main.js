@@ -52,12 +52,15 @@ const languageData = {
             { word: 'Opportunity', translation: '기회', pronunciation: '[오퍼튜니티]' }
         ],
         grammar: [
-            { rule: 'Present Simple', description: 'Used for habits/truths', example: 'I study every day.' },
-            { rule: 'Articles (a/an/the)', description: 'Determiners for nouns', example: 'A book, An apple, The sun.' },
-            { rule: 'Plural Nouns', description: 'Adding -s/es to words', example: 'Dog -> Dogs, Box -> Boxes' },
-            { rule: 'Past Tense (-ed)', description: 'Completed actions', example: 'I worked yesterday.' },
-            { rule: 'Modal Verbs (Can/Should)', description: 'Ability and advice', example: 'I can swim / You should go.' },
-            { rule: 'Prepositions', description: 'In, On, At for time/place', example: 'In the morning / On the table.' }
+            { rule: 'Verb Types', description: 'Main Verbs vs Auxiliary Verbs', example: 'I swim (Main) / I can swim (Auxiliary).' },
+            { rule: 'Sentence Structure', description: 'Subject (S) + Verb (V) is the base.', example: 'He runs. / They play soccer.' },
+            { rule: 'CAN / COULD', description: 'Ability, permission, or requests.', example: 'I can swim. / Could you help me?' },
+            { rule: 'WILL / WOULD', description: 'Future actions, intent, or polite requests.', example: 'I will go. / Would you like some tea?' },
+            { rule: 'SHOULD / MUST', description: 'Advice, obligation, or strong necessity.', example: 'You should rest. / You must stop here.' },
+            { rule: 'MAY / MIGHT', description: 'Permission or uncertain possibility.', example: 'May I come in? / It might rain today.' },
+            { rule: 'USED TO', description: 'Past habits that no longer happen.', example: 'I used to play piano. (Now I don\'t)' },
+            { rule: 'Future Perfect', description: 'will + have + p.p (Completion in future).', example: 'I will have finished it by tomorrow.' },
+            { rule: 'Should Have p.p', description: 'Regret about something not done in the past.', example: 'I should have studied harder.' }
         ],
         conversation: [
             { phrase: 'How are you?', translation: '어떻게 지내세요?', pronunciation: '[하우 아 유?]' },
@@ -89,7 +92,7 @@ const languageData = {
         grammar: [
             { rule: 'S + V + O', description: 'Basic sentence structure', example: '我学中文 (I learn Chinese)' },
             { rule: '吗 (Ma)', description: 'Question particle at the end', example: '你好吗? (How are you?)' },
-            { rule: '的 (De)', description: 'Possessive or descriptive', example: '我的书 (My book)' },
+            { rule: '의 (De)', description: 'Possessive or descriptive', example: '我的书 (My book)' },
             { rule: '了 (Le)', description: 'Change of state or completion', example: '我吃饭了 (I have eaten)' },
             { rule: '在 (Zài)', description: 'Continuous action / location', example: '我在看书 (I am reading)' },
             { rule: '不 / 没 (Bù / Méi)', description: 'Negation prefixes', example: '我不去 / 我没有' }
@@ -122,7 +125,7 @@ const languageData = {
             { word: '平和 (Heiwa)', translation: '평화', pronunciation: '[헤이와]' }
         ],
         grammar: [
-            { rule: 'は (Wa)', description: 'Topic particle', example: '私は学生です (I am a student)' },
+            { rule: 'は (Wa)', description: 'Topic particle', example: '私は학생입니다 (I am a student)' },
             { rule: 'の (No)', description: 'Possessive particle', example: '私の本 (My book)' },
             { rule: 'です (Desu)', description: 'Polite ending for nouns', example: 'きれいです (It is beautiful)' },
             { rule: 'を (O)', description: 'Object particle', example: 'りんごを食べます (Eat an apple)' },
