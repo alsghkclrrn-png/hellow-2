@@ -15,16 +15,16 @@ const languageData = {
             { type: '이중모음', items: 'ㅐ, ㅒ, ㅔ, ㅖ, ㅘ, ㅙ, ㅚ, ㅝ, ㅞ, ㅟ, ㅢ', desc: '두 개의 모음이 합쳐진 11개의 복합 모음입니다.' }
         ],
         vocabulary: [
-            { word: '학교', translation: '배우는 곳 (교육 기관)', pronunciation: '[학교]' },
-            { word: '친구', pronunciation: '[친구]', translation: '가깝게 오래 사귄 사람' },
-            { word: '사과', translation: '붉은색의 달콤한 과일', pronunciation: '[사과]' },
-            { word: '책', translation: '종이를 묶어 만든 읽을거리', pronunciation: '[책]' },
-            { word: '음식', translation: '사람이 먹을 수 있는 것', pronunciation: '[음식]' },
-            { word: '공부', translation: '학문이나 기술을 배우는 일', pronunciation: '[공부]' },
-            { word: '시간', pronunciation: '[시간]', translation: '어떤 때나 동안' },
-            { word: '하늘', translation: '지구의 대기권 위 공간', pronunciation: '[하늘]' },
-            { word: '바다', translation: '지구 위 짠물이 고인 넓은 곳', pronunciation: '[바다]' },
-            { word: '사랑', translation: '아끼고 귀중히 여기는 마음', pronunciation: '[사랑]' }
+            { word: '회의 (Meeting)', translation: '여럿이 모여 의견을 나눔', pronunciation: '[회의/회이]' },
+            { word: '성공 (Success)', translation: '목적한 바를 이룸', pronunciation: '[성공]' },
+            { word: '여행 (Travel)', pronunciation: '[여행]', translation: '다른 고장이나 나라를 구경함' },
+            { word: '행복 (Happiness)', translation: '기쁘고 보람 있는 상태', pronunciation: '[행복]' },
+            { word: '환경 (Environment)', translation: '우리를 둘러싼 자연 조건', pronunciation: '[환경]' },
+            { word: '혁신 (Innovation)', translation: '새롭게 바꿈', pronunciation: '[혁씬]' },
+            { word: '도전 (Challenge)', pronunciation: '[도전]', translation: '어려운 일에 맞섬' },
+            { word: '기회 (Opportunity)', translation: '어떤 일을 하기에 좋은 때', pronunciation: '[기회]' },
+            { word: '협력 (Cooperation)', translation: '힘을 합쳐 도움', pronunciation: '[혐녁]' },
+            { word: '열정 (Passion)', translation: '뜨거운 마음', pronunciation: '[열쩡]' }
         ],
         grammar: [
             { rule: '-은/는', description: '문장의 주제나 대상을 나타내는 보조사', example: '저는 학생입니다.' },
@@ -36,17 +36,16 @@ const languageData = {
         ],
         deepGrammar: [
             { title: '은/는 vs 이/가 완벽 구분', content: '은/는은 대조나 주제를 나타낼 때 사용합니다. "저는 학생입니다"처럼 자신을 소개할 때 주로 쓰죠. 반면 이/가 는 특정 사실이나 주어를 강조할 때 씁니다. "비가 와요"처럼 자연 현상이나 새로운 정보를 말할 때 사용해보세요.', tip: '처음 만난 사람에게 자기소개할 때는 "저는 ~입니다"가 자연스러워요!' },
-            { title: '해요체와 하십시오체의 차이', content: '한국어의 존댓말은 상황에 따라 달라요. "-요"는 일상적인 대화에서 부드럽게 쓰이고, "-습니다"는 군대, 뉴스, 면접 같은 아주 격식 있는 자리에서 쓰입니다. 성인 학습자라면 두 가지를 상황에 맞춰 쓰는 연습이 중요합니다.', tip: '친구 부모님을 뵈었을 때는 "-요"를 써도 충분히 예의 바르게 들려요.' }
+            { title: '해요체와 하십시오체의 차이', content: '한국어의 존댓말은 상황에 따라 달라요. "-요"는 일상적인 대화에서 부드럽게 쓰이고, "-습니다"는 군대, 뉴스, 면접 같은 아주 격식 있는 자리에서 쓰입니다. 성인 학습자라면 두 가지를 상황에 맞춰 쓰는 연습이 중요합니다.', tip: '친구 부모님을 뵈었을 때는 "-요"를 써도 충분히 예의 바르게 들려요.' },
+            { title: 'ㄹ 탈락 법칙 (Irregular ㄹ)', content: '동사나 형용사의 어간이 ㄹ로 끝날 때, ㄴ, ㅂ, ㅅ 앞에서 ㄹ이 탈락합니다. 예를 들어 "살다"가 "삽니다"가 되고 "알다"가 "아는"이 됩니다.', tip: '"만들다" -> "만듭니다" / "만드는" 패턴을 기억하세요!' }
         ],
         conversation: [
-            { phrase: '반갑습니다', translation: '만나서 기쁘다는 인사', pronunciation: '[반갑씀니다]' },
-            { phrase: '이름이 뭐예요?', translation: '이름을 물어볼 때 사용', pronunciation: '[이르미 뭐예요?]' },
-            { phrase: '잘 지냈어요?', translation: '안부를 물을 때 사용', pronunciation: '[잘 지내써요?]' },
-            { phrase: '이거 얼마예요?', translation: '물건의 가격을 물을 때 사용', pronunciation: '[이거 얼마예요?]' },
-            { phrase: '화장실 어디예요?', pronunciation: '[화장실 어디예요?]', translation: '장소의 위치를 물을 때 사용' },
-            { phrase: '감사합니다', translation: '고마움을 표현할 때 사용', pronunciation: '[감사함니다]' },
-            { phrase: '죄송합니다', translation: '사과를 할 때 사용', pronunciation: '[죄송함니다]' },
-            { phrase: '다음에 또 봐요', translation: '헤어질 때 하는 인사', pronunciation: '[다음에 또 봐요]' }
+            { phrase: '오늘 회의는 몇 시예요?', translation: '회의 시간을 물어볼 때', pronunciation: '[오늘 회의는 멷 씨예요?]' },
+            { phrase: '제 명함입니다', translation: '비즈니스 첫 인사', pronunciation: '[제 명함임니다]' },
+            { phrase: '커피 한 잔 하실래요?', translation: '가벼운 제안', pronunciation: '[커피 한 잔 하실래요?]' },
+            { phrase: '말씀 많이 들었습니다', translation: '소문으로 알던 사람을 만났을 때', pronunciation: '[말씀 마니 드러씀니다]' },
+            { phrase: '도와주셔서 감사합니다', pronunciation: '[도와주셔서 감사함니다]', translation: '도움에 대한 감사 표현' },
+            { phrase: '주말 잘 보내세요', translation: '작별 인사', pronunciation: '[주말 잘 보내세요]' }
         ]
     },
     'english': {
@@ -54,42 +53,43 @@ const languageData = {
         flag: '🇺🇸',
         color: '#3b82f6',
         basics: [
-            { type: 'Uppercase (대문자)', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '영어의 26개 대문자 알파벳입니다.' },
-            { type: 'Lowercase (소문자)', items: 'a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z', desc: '영어의 26개 소문자 알파벳입니다.' },
-            { type: 'Vowels (모음)', items: 'A, E, I, O, U', desc: '영어 발음의 핵심이 되는 5개의 모음입니다.' },
-            { type: 'Consonants (자음)', items: 'B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z', desc: '모음을 제외한 21개의 자음입니다.' }
+            { type: 'Alphabet (Phonetics)', items: 'A [ei], B [bi:], C [si:], D [di:]...', desc: '영어 읽기의 기초인 알파벳 발음입니다.' },
+            { type: 'Articles (관사)', items: 'A, An, The', desc: '명사 앞에 붙어 성격(정해진 것인지 아닌지)을 나타냅니다.' },
+            { type: 'Pronouns (대명사)', items: 'I, You, He, She, We, They', desc: '사람이나 사물을 대신해서 부르는 말입니다.' },
+            { type: 'Sentence Type', items: 'Positive, Negative, Question', desc: '평서문, 부정문, 의문문의 기본 구조입니다.' }
         ],
         vocabulary: [
-            { word: 'Library', translation: '도서관', pronunciation: '[라이브러리]' },
-            { word: 'Together', translation: '함께', pronunciation: '[투게더]' },
-            { word: 'Delicious', translation: '맛있는', pronunciation: '[딜리셔스]' },
-            { word: 'Journey', translation: '여정/여행', pronunciation: '[저니]' },
-            { word: 'Innovation', translation: '혁신', pronunciation: '[이노베이션]' },
-            { word: 'Experience', translation: '경험', pronunciation: '[익스피리언스]' },
-            { word: 'Language', translation: '언어', pronunciation: '[랭귀지]' },
-            { word: 'Success', translation: '성공', pronunciation: '[석세스]' },
-            { word: 'Challenge', translation: '도전', pronunciation: '[챌린지]' },
-            { word: 'Opportunity', translation: '기회', pronunciation: '[오퍼튜니티]' }
+            { word: 'Quarterly Report', translation: '분기 보고서', pronunciation: '[쿼터리 리포트]' },
+            { word: 'Deadline', translation: '마감 기한', pronunciation: '[데드라인]' },
+            { word: 'Sustainability', translation: '지속 가능성', pronunciation: '[서스테이너빌리티]' },
+            { word: 'Collaboration', translation: '협업', pronunciation: '[콜라보레이션]' },
+            { word: 'Flexibility', translation: '유연성', pronunciation: '[플렉서빌리티]' },
+            { word: 'Investment', translation: '투자', pronunciation: '[인베스트먼트]' },
+            { word: 'Networking', translation: '네트워킹/인맥 형성', pronunciation: '[네트워킹]' },
+            { word: 'Efficiency', translation: '효율성', pronunciation: '[이피션시]' },
+            { word: 'Negotiation', translation: '협상', pronunciation: '[니고시에이션]' },
+            { word: 'Architecture', translation: '구조/건축', pronunciation: '[아키텍처]' }
         ],
         grammar: [
-            { rule: '동사의 종류', description: '일반 동사와 조동사의 구분', example: 'I swim (일반) / I can swim (조동사).' },
-            { rule: '문장 구조', description: '주어(S) + 동사(V)가 기본 문법 체계입니다.', example: 'He runs. / They play soccer.' },
-            { rule: 'CAN / COULD', description: '능력, 허가 또는 정중한 요청을 표현', example: 'I can swim. / Could you help me?' },
-            { rule: 'WILL / WOULD', description: '미래의 의지나 정중한 권유를 표현', example: 'I will go. / Would you like some tea?' },
-            { rule: 'SHOULD / MUST', description: '조언, 의무 또는 강한 필요성을 표현', example: 'You should rest. / You must stop here.' },
-            { rule: 'MAY / MIGHT', description: '허가나 불확실한 가능성을 표현', example: 'May I come in? / It might rain today.' }
+            { rule: 'Passive Voice (수동태)', description: 'Be + P.P 형태, 행위의 대상을 강조', example: 'The book was written by him.' },
+            { rule: 'Conditionals (가정법)', description: 'If를 사용한 가정 상황 표현', example: 'If I were you, I would go.' },
+            { rule: 'Relatives (관계대명사)', description: 'Who, Which 등으로 명사 수식', example: 'The man who is tall.' },
+            { rule: 'Modals (조동사)', description: 'Can, Should, Must 등 의미 추가', example: 'You should try this.' },
+            { rule: 'Tenses (시제)', description: 'Present, Past, Future, Perfect', example: 'I have seen this movie.' },
+            { rule: 'Gerunds (동명사)', description: 'V-ing 형태, 주어/목적어로 사용', example: 'Running is good for health.' }
         ],
         deepGrammar: [
             { title: 'The vs A/An 완벽 가이드', content: '특정한 것을 가리킬 때는 the를, 막연한 하나를 말할 때는 a/an을 씁니다. 예를 들어, "I saw a movie"는 그냥 영화 한 편을 봤다는 뜻이고, "I saw the movie"는 우리가 이미 알고 있는 그 영화를 봤다는 뜻입니다.', tip: '세상에 하나뿐인 것(the sun, the moon)에는 항상 the를 붙여요!' },
-            { title: '현재완료(Have + p.p) 실전 사용법', content: '과거에 시작된 일이 지금까지 영향을 줄 때 씁니다. "I lost my key"는 그냥 과거에 잃어버렸다는 사실만 말하지만, "I have lost my key"는 잃어버려서 지금도 열쇠가 없다는 뉘앙스를 풍깁니다.', tip: '경험을 물어볼 때 "Have you ever...?" 패턴을 기억하세요.' }
+            { title: '현재완료(Have + p.p) 실전 사용법', content: '과거에 시작된 일이 지금까지 영향을 줄 때 씁니다. "I lost my key"는 그냥 과거에 잃어버렸다는 사실만 말하지만, "I have lost my key"는 잃어버려서 지금도 열쇠가 없다는 뉘앙스를 풍깁니다.', tip: '경험을 물어볼 때 "Have you ever...?" 패턴을 기억하세요.' },
+            { title: 'Will vs Be going to', content: 'Will은 순간적인 결정이나 막연한 미래를, Be going to는 이미 계획된 일이나 확실한 징조가 있는 미래를 말할 때 씁니다.', tip: '비가 올 것 같은 구름을 봤다면 "It\'s going to rain!"이 정답!' }
         ],
         conversation: [
-            { phrase: 'How are you?', translation: '어떻게 지내세요?', pronunciation: '[하우 아 유?]' },
-            { phrase: 'Could you help me?', translation: '좀 도와주시겠어요?', pronunciation: '[쿠쥬 헬프 미?]' },
-            { phrase: 'Nice weather!', translation: '날씨 정말 좋네요!', pronunciation: '[나이스 웨더!]' },
-            { phrase: 'What do you recommend?', translation: '무엇을 추천하시나요?', pronunciation: '[왓 두 유 레코멘드?]' },
-            { phrase: 'Where is the station?', translation: '역이 어디에 있나요?', pronunciation: '[웨어 이즈 더 스테이션?]' },
-            { phrase: 'Nice to meet you', translation: '만나서 반가워요', pronunciation: '[나이스 투 미트 유]' }
+            { phrase: 'Could you give me more details?', translation: '더 자세히 말씀해 주시겠어요?', pronunciation: '[쿠쥬 기브 미 모어 디테일즈?]' },
+            { phrase: 'I look forward to working with you.', translation: '함께 일하기를 기대합니다.', pronunciation: '[아이 룩 포워드 투 워킹 위드 유]' },
+            { phrase: 'Let\'s touch base next week.', translation: '다음 주에 다시 이야기합시다.', pronunciation: '[레츠 터치 베이스 넥스트 위크]' },
+            { phrase: 'That makes sense.', translation: '이해가 되네요 (말이 되네요).', pronunciation: '[댓 메익스 센스]' },
+            { phrase: 'I agree with your point.', translation: '당신의 의견에 동의합니다.', pronunciation: '[아이 어그리 위드 유어 포인트]' },
+            { phrase: 'What\'s the bottom line?', translation: '핵심(결론)이 무엇인가요?', pronunciation: '[왓츠 더 바텀 라인?]' }
         ]
     },
     'chinese': {
@@ -103,31 +103,37 @@ const languageData = {
             { type: '한어병음 (Pinyin)', items: '중국어 발음 기호', desc: '한자의 발음을 영문자로 표기하는 시스템입니다.' }
         ],
         vocabulary: [
-            { word: '学生 (Xuésheng)', translation: '학생', pronunciation: '[슈에셩]' },
-            { word: '老师 (Lǎoshī)', translation: '선생님', pronunciation: '[라오싀]' },
-            { word: '开心 (Kāixīn)', translation: '기쁘다/행복하다', pronunciation: '[카이씬]' },
-            { word: '努力 (Nǔlì)', translation: '노력하다', pronunciation: '[누리]' },
-            { word: '漂亮 (Piàoliang)', translation: '예쁘다', pronunciation: '[피아오리앙]' },
-            { word: '시간 (Shíjiān)', translation: '시간', pronunciation: '[싀지엔]' },
-            { word: '朋友 (Péngyǒu)', translation: '친구', pronunciation: '[펑요우]' },
-            { word: '手机 (Shǒujī)', translation: '휴대폰', pronunciation: '[쇼우지]' }
+            { word: '项目 (Xiàngmù)', translation: '프로젝트', pronunciation: '[씨앙무]' },
+            { word: '合作 (Hézuò)', translation: '합작/협력', pronunciation: '[허쭈오]' },
+            { word: '市场 (Shìchǎng)', translation: '시장', pronunciation: '[싀창]' },
+            { word: '产品 (Chǎnpǐn)', translation: '제품', pronunciation: '[찬핀]' },
+            { word: '价格 (Jiàgé)', translation: '가격', pronunciation: '[지아거]' },
+            { word: '质量 (Zhìliàng)', translation: '품질', pronunciation: '[싀리앙]' },
+            { word: '客户 (Kèhù)', translation: '고객', pronunciation: '[커후]' },
+            { word: '合同 (Hétóng)', translation: '계약서', pronunciation: '[허통]' },
+            { word: '成功 (Chénggōng)', translation: '성공', pronunciation: '[청공]' },
+            { word: '机会 (Jīhuì)', translation: '기회', pronunciation: '[지후이]' }
         ],
         grammar: [
             { rule: '기본 어순', description: '주어 + 동사 + 목적어 순서 (한국어와 다름)', example: '我学中文 (나는 중국어를 배운다)' },
             { rule: '吗 (Ma)', description: '문장 끝에 붙여 의문문을 만듬', example: '你好吗? (잘 지내니?)' },
             { rule: '的 (De)', description: '소유나 수식을 나타냄 (~의, ~한)', example: '我的书 (나의 책)' },
-            { rule: '了 (Le)', description: '상태의 변화나 완료를 나타냄', example: '我吃饭了 (나 밥 먹었어)' }
+            { rule: '了 (Le)', description: '상태의 변화나 완료를 나타냄', example: '我吃饭了 (나 밥 먹었어)' },
+            { rule: '把 (Bǎ) 구문', description: '동작의 결과를 강조할 때 사용', example: '我把作业做了 (나 숙제 다 했어)' },
+            { rule: '是...의 (Shì...de)', description: '시간, 장소, 방식 등을 강조', example: '我是昨天来的 (나는 어제 온 거야)' }
         ],
         deepGrammar: [
             { title: '성조(Tones)를 정복하는 비결', content: '중국어는 음의 높낮이에 따라 뜻이 완전히 달라집니다. 1성은 길고 높게, 2성은 밑에서 위로, 3성은 내려갔다 올라오게, 4성은 위에서 아래로 짧게 내리꽂듯 발음하세요. 머릿속으로 음의 곡선을 그리며 발음하는 것이 성인 학습자에게 효과적입니다.', tip: '발음할 때 고개를 약간씩 움직이며 성조의 흐름을 타보세요!' },
-            { title: '중국어 어순의 핵심: S-V-O', content: '한국어는 "나 사과 먹어"처럼 목적어가 중간에 오지만, 중국어는 영어와 비슷하게 "나 먹어 사과" 순으로 말합니다. 이 구조만 익숙해져도 간단한 문장은 바로 만들 수 있어요.', tip: '주어(나) + 동사(좋아해) + 목적어(너) = 我爱你!' }
+            { title: '중국어 어순의 핵심: S-V-O', content: '한국어는 "나 사과 먹어"처럼 목적어가 중간에 오지만, 중국어는 영어와 비슷하게 "나 먹어 사과" 순으로 말합니다. 이 구조만 익숙해져도 간단한 문장은 바로 만들 수 있어요.', tip: '주어(나) + 동사(좋아해) + 목적어(너) = 我爱你!' },
+            { title: '알아두면 좋은 "了"의 비밀', content: '了는 단순히 과거형이 아닙니다. 새로운 상황이 발생했거나 상태가 변화했을 때도 사용합니다. "下雨了"는 "비가 오기 시작했다"는 뜻입니다.', tip: '변화를 감지했다면 문장 끝에 了를 붙여보세요!' }
         ],
         conversation: [
-            { phrase: '好久不见', translation: '오랜만이에요', pronunciation: '[하오지우 부지엔]' },
-            { phrase: '你吃饭了吗?', translation: '식사하셨나요?', pronunciation: '[니 츠판러 마?]' },
-            { phrase: '加油!', translation: '힘내세요! (화이팅)', pronunciation: '[짜요!]' },
-            { phrase: '多少钱?', translation: '얼마인가요?', pronunciation: '[뚜오샤오 치엔]' },
-            { phrase: '谢谢', translation: '감사합니다', pronunciation: '[씨에씨에]' }
+            { phrase: '请多关照', translation: '잘 부탁드립니다.', pronunciation: '[칭 뚜오 꽌쟈오]' },
+            { phrase: '合同准备好了吗?', translation: '계약서는 준비되었나요?', pronunciation: '[허통 쭌뻬이 하오러 마?]' },
+            { phrase: '我想和你合作。', translation: '당신과 협력하고 싶습니다.', pronunciation: '[워 씨앙 허 니 허쭈오]' },
+            { phrase: '这个价格太贵了。', translation: '이 가격은 너무 비싸요.', pronunciation: '[쩌거 지아거 타이 꾸이러]' },
+            { phrase: '合作愉快!', translation: '즐겁게 협력합시다!', pronunciation: '[허쭈오 위콰이]' },
+            { phrase: '以后常联系。', translation: '앞으로 자주 연락합시다.', pronunciation: '[이허우 창 리엔씨]' }
         ]
     },
     'japanese': {
@@ -135,37 +141,43 @@ const languageData = {
         flag: '🇯🇵',
         color: '#ec4899',
         basics: [
-            { type: '히라가나', items: 'あ, い, 우, え, 오, か, き, く, け, 코...', desc: '일본어의 가장 기본적인 문자입니다.' },
-            { type: '가타카나', items: 'ア, 이, ウ, 에, オ, カ, キ, ク, 케, 코...', desc: '외래어나 강조할 때 사용하는 문자입니다.' },
-            { type: '한자 (Kanji)', items: '日, 월, 화, 수, 목, 금, 토...', desc: '표의 문자로 의미를 전달하는 한자입니다.' },
-            { type: '장음/단음', items: '발음의 길이', desc: '발음의 길이에 따라 단어의 뜻이 달라집니다.' }
+            { type: '히라가나', items: 'あ, い, う, え, お / か, き, く, け, こ...', desc: '일본어의 기본 문자로 부드러운 곡선 형태입니다.' },
+            { type: '가타카나', items: 'ア, イ, ウ, エ, オ / カ, キ, ク, ケ, コ...', desc: '외래어 표기에 주로 쓰이며 각진 형태입니다.' },
+            { type: '한자 (Kanji)', items: '常用漢字 (조용칸지)', desc: '생활에서 자주 쓰이는 2,136개의 한자입니다.' },
+            { type: '동사 그룹', items: '1그룹, 2그룹, 3그룹', desc: '활용 방식에 따라 동사를 세 분류로 나눕니다.' }
         ],
         vocabulary: [
-            { word: '夢 (Yume)', translation: '꿈', pronunciation: '[유메]' },
-            { word: '希望 (Kibō)', translation: '희망', pronunciation: '[키보-]' },
-            { word: '元気 (Genki)', translation: '건강함/활기참', pronunciation: '[겐키]' },
-            { word: '心 (Kokoro)', translation: '마음', pronunciation: '[코코로]' },
-            { word: '桜 (Sakura)', translation: '벚꽃', pronunciation: '[사쿠라]' },
-            { word: '友達 (Tomodachi)', translation: '친구', pronunciation: '[토모다치]' },
-            { word: '未来 (Mirai)', translation: '미래', pronunciation: '[미라이]' },
-            { word: '旅行 (Ryokō)', translation: '여행', pronunciation: '[료코-]' }
+            { word: '戦略 (Senryaku)', translation: '전략', pronunciation: '[센랴쿠]' },
+            { word: '効率 (Kōritsu)', translation: '효율', pronunciation: '[코-리츠]' },
+            { word: '検討 (Kentō)', translation: '검토', pronunciation: '[켄토-]' },
+            { word: '共有 (Kyōyu)', translation: '공유', pronunciation: '[쿄-유]' },
+            { word: '承認 (Shōnin)', translation: '승인', pronunciation: '[쇼-닌]' },
+            { word: '担当 (Tandō)', translation: '담당', pronunciation: '[탄도-]' },
+            { word: '名刺 (Meishi)', translation: '명함', pronunciation: '[메이시]' },
+            { word: '出張 (Shutchō)', translation: '출장', pronunciation: '[슛쵸-]' },
+            { word: '予算 (Yosan)', translation: '예산', pronunciation: '[요산]' },
+            { word: '進捗 (Shinchoku)', translation: '진척 (진행 상황)', pronunciation: '[신쵸쿠]' }
         ],
         grammar: [
-            { rule: 'は (Wa)', description: '문장의 주제를 나타내는 조사 (~은/는)', example: '私は学生입니다 (나는 학생입니다)' },
-            { rule: 'の (No)', description: '소유나 수식을 나타내는 조사 (~의)', example: '私の本 (나의 책)' },
-            { rule: '입니다 (Desu)', description: '문장을 정중하게 마무리하는 서술어', example: 'きれ이입니다 (예쁩니다)' },
-            { rule: '을/를 (O)', description: '동사의 목적어를 나타내는 조사 (~을/를)', example: 'りんごを 먹습니다 (사과를 먹습니다)' }
+            { rule: 'て형 (Te-form)', description: '동사를 연결하거나 부탁할 때 사용', example: '食べてください (드세요)' },
+            { rule: '존경어/겸양어', description: '상대를 높이거나 자신을 낮추는 표현', example: 'おっしゃる (말씀하시다) / 申す (말하다)' },
+            { rule: '가능동사', description: '할 수 있다를 나타내는 변화', example: '書く -> 書ける (쓸 수 있다)' },
+            { rule: '의지형', description: '하자/하겠다를 나타내는 변화', example: '行こう (가자) / しよう (하자)' },
+            { rule: '수동/사역', description: '당하거나 시키는 표현', example: '言われる (듣다) / させる (시키다)' },
+            { rule: '추측 (~だろう/でしょう)', description: '~일 것이다라는 추측', example: '雨が降るだろう (비가 오겠지)' }
         ],
         deepGrammar: [
-            { title: '은/는(は) vs 이/가(が) 일본어판', content: '한국어와 마찬가지로 일본어도 は와 が의 구분이 중요합니다. は는 문장의 큰 주제를, が는 문장 안의 작은 주어를 나타냅니다. 예를 들어 "코끼리는 코가 길다"에서 코끼리는 は를, 코는 が를 씁니다.', tip: '처음 말하는 주어에는 が를, 이미 알고 있는 주제에는 は를 써보세요.' },
-            { title: '일본어 동사의 3가지 그룹', content: '일본어 동사는 모양에 따라 1, 2, 3그룹으로 나뉩니다. 그룹에 따라 활용 방식이 다르기 때문에 동사를 외울 때 몇 그룹인지 함께 체크하는 습관이 중요합니다.', tip: '합니다(する)와 옵니다(くる)는 딱 두 개뿐인 3그룹 동사예요!' }
+            { title: '은/는(は) vs 이/가(가) 일본어판', content: '한국어와 마찬가지로 일본어도 は와 が의 구분이 중요합니다. は는 문장의 큰 주제를, が는 문장 안의 작은 주어를 나타냅니다. 예를 들어 "코끼리는 코가 길다"에서 코끼리는 は를, 코는 が를 씁니다.', tip: '처음 말하는 주어에는 が를, 이미 알고 있는 주제에는 は를 써보세요.' },
+            { title: '일본어 동사의 3가지 그룹', content: '일본어 동사는 모양에 따라 1, 2, 3그룹으로 나뉩니다. 그룹에 따라 활용 방식이 다르기 때문에 동사를 외울 때 몇 그룹인지 함께 체크하는 습관이 중요합니다.', tip: '합니다(する)와 옵니다(くる)는 딱 두 개뿐인 3그룹 동사예요!' },
+            { title: '비즈니스 경어의 핵심', content: '일본 직장 생활에서는 です/ます 외에도 특별한 어휘를 씁니다. "갑니다" 대신 "마이리마스(参ります)"를 쓰는 식이죠. 처음에는 "데스/마스"만 완벽해도 괜찮습니다.', tip: '상대방의 의견을 물을 때 "이카가데쇼-카?(어떠신가요?)"를 써보세요.' }
         ],
         conversation: [
-            { phrase: 'お疲れ様입니다', translation: '수고하셨습니다', pronunciation: '[오츠카레사마데스]' },
-            { phrase: 'はじめまして', translation: '처음 뵙겠습니다', pronunciation: '[하지메마시테]' },
-            { phrase: '頑張って!', translation: '힘내세요!', pronunciation: '[간밧테!]' },
-            { phrase: 'いくら입니다까?', translation: '얼마인가요?', pronunciation: '[이크라데스까]' },
-            { phrase: 'すみません', translation: '실례합니다/죄송합니다', pronunciation: '[스미마셍]' }
+            { phrase: 'お世話になっております。', translation: '항상 신세 지고 있습니다 (비즈니스 필수 인사).', pronunciation: '[오세와니 낫떼 오리마스]' },
+            { phrase: 'ご確認をお願いします。', translation: '확인 부탁드립니다.', pronunciation: '[고카쿠닌오 오네가이시마스]' },
+            { phrase: '承知いたしました。', translation: '잘 알겠습니다 (정중한 수락).', pronunciation: '[쇼-치 이타시마시타]' },
+            { phrase: '少々お待ちください。', translation: '잠시만 기다려 주세요.', pronunciation: '[쇼-쇼- 오마치 쿠다사이]' },
+            { phrase: 'お先に失礼します。', translation: '먼저 실례하겠습니다 (퇴근 인사).', pronunciation: '[오사키니 시츠레이시마스]' },
+            { phrase: 'よろしくお願いします。', translation: '잘 부탁드립니다.', pronunciation: '[요로시쿠 오네가이시마스]' }
         ]
     },
     'spanish': {
@@ -174,34 +186,42 @@ const languageData = {
         color: '#f59e0b',
         basics: [
             { type: 'Alfabeto', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '스페인어만의 독특한 글자 Ñ(에녜)가 포함된 알파벳입니다.' },
-            { type: 'Vowels', items: 'A, E, I, O, U', desc: '영어와 달리 발음이 일정하고 명확합니다.' },
-            { type: 'Accents', items: 'á, é, í, ó, ú', desc: '강세를 표시하며, 질문 시에는 ¡! 와 ¿? 를 사용합니다.' }
+            { type: 'Pronunciación', items: 'R [rr], J [h], LL [y]', desc: '독특한 발음 규칙이 있지만 읽는 법은 매우 직관적입니다.' },
+            { type: 'Subject Pronouns', items: 'Yo, Tú, Él/Ella, Nosotros, Vosotros, Ellos', desc: '주어 대명사입니다.' },
+            { type: 'Punctuation', items: '¡! / ¿?', desc: '문장의 시작과 끝에 거꾸로 된 기호를 함께 사용합니다.' }
         ],
         vocabulary: [
-            { word: 'Biblioteca', translation: '도서관', pronunciation: '[비블리오떼까]' },
-            { word: 'Amigo', translation: '친구', pronunciation: '[아미고]' },
-            { word: 'Delicioso', translation: '맛있는', pronunciation: '[델리시오소]' },
-            { word: 'Viaje', translation: '여행', pronunciation: '[비아헤]' },
-            { word: 'Mañana', translation: '내일 / 아침', pronunciation: '[마냐나]' },
-            { word: 'Gracias', translation: '감사합니다', pronunciation: '[그라시아스]' },
-            { word: 'Fiesta', translation: '축제/파티', pronunciation: '[피에스따]' },
-            { word: 'Familia', translation: '가족', pronunciation: '[파밀리아]' }
+            { word: 'Empresa', translation: '기업/회사', pronunciation: '[엠쁘레사]' },
+            { word: 'Negocio', translation: '비즈니스', pronunciation: '[네고시오]' },
+            { word: 'Proyecto', translation: '프로젝트', pronunciation: '[쁘로옉또]' },
+            { word: 'Oportunidad', translation: '기회', pronunciation: '[오뽀르뚜니다드]' },
+            { word: 'Mercado', translation: '시장', pronunciation: '[멜까도]' },
+            { word: 'Cliente', translation: '고객', pronunciation: '[끌리엔떼]' },
+            { word: 'Ventas', translation: '판매/영업', pronunciation: '[벤따스]' },
+            { word: 'Inversión', translation: '투자', pronunciation: '[인벨시온]' },
+            { word: 'Reunión', translation: '회의', pronunciation: '[레우니온]' },
+            { word: 'Éxito', translation: '성공', pronunciation: '[엑씨또]' }
         ],
         grammar: [
             { rule: '명사의 성별', description: '모든 명사는 남성형(o) 또는 여성형(a)으로 나뉩니다.', example: 'El libro (남성) / La mesa (여성)' },
             { rule: '정관사/부정관사', description: '성별과 수에 따라 정관사가 달라집니다.', example: 'el/la (단수), los/las (복수)' },
-            { rule: '동사 변화', description: '주어에 따라 동사의 끝부분이 계속 변합니다.', example: 'Yo hablo (나), Tú hablas (너), Él habla (그)' }
+            { rule: '동사 변화', description: '주어에 따라 동사의 끝부분이 계속 변합니다.', example: 'Yo hablo (나), Tú hablas (너), Él habla (그)' },
+            { rule: 'Ser vs Estar', description: '두 가지 "be" 동사 구분 (불변 vs 가변)', example: 'Soy coreano (나는 한국인이다) / Estoy feliz (지금 기쁘다)' },
+            { rule: 'Ir + a + Infinitivo', description: '가까운 미래를 표현', example: 'Voy a comer (먹을 것이다)' },
+            { rule: 'Gerundio (-ando/-iendo)', description: '현재 진행형 표현', example: 'Estoy hablando (말하는 중이다)' }
         ],
         deepGrammar: [
             { title: '명사의 성(Gender) 쉽게 구분하기', content: '스페인어 명사는 남성 아니면 여성입니다. 보통 -o로 끝나면 남성, -a로 끝나면 여성인 경우가 많아요. 하지만 맵(mapa)처럼 -a로 끝나도 남성인 예외도 있으니 주의가 필요합니다.', tip: '여성 명사 앞에는 La를, 남성 명사 앞에는 El을 붙여서 세트로 외우세요!' },
-            { title: '스페인어의 꽃, 동사 활용', content: '스페인어는 주어를 생략해도 동사 모양만 보고 누가 말하는지 알 수 있어요. "Hablo"라고만 해도 "내가 말한다"는 뜻이 되죠. 처음에는 복잡하지만 익숙해지면 아주 효율적인 언어입니다.', tip: '가장 기본인 -ar 동사의 변화형(o-as-a-amos-áis-an)부터 노래처럼 외워보세요.' }
+            { title: '스페인어의 꽃, 동사 활용', content: '스페인어는 주어를 생략해도 동사 모양만 보고 누가 말하는지 알 수 있어요. "Hablo"라고만 해도 "내가 말한다"는 뜻이 되죠. 처음에는 복잡하지만 익숙해지면 아주 효율적인 언어입니다.', tip: '가장 기본인 -ar 동사의 변화형(o-as-a-amos-áis-an)부터 노래처럼 외워보세요.' },
+            { title: 'Por vs Para 구분하기', content: '둘 다 "위하여"로 번역되곤 하지만, Por은 이유나 수단을, Para는 목적이나 대상을 주로 나타냅니다.', tip: '선물의 대상( recipient)을 말할 때는 "Para ti(너를 위해)"를 쓰세요!' }
         ],
         conversation: [
-            { phrase: '¡Hola! ¿Cómo estás?', translation: '안녕! 어떻게 지내?', pronunciation: '[올라! 꼬모 에스따스?]' },
-            { phrase: 'Mucho gusto', translation: '만나서 반가워요', pronunciation: '[무쵸 구스또]' },
-            { phrase: '¿Dónde está el baño?', translation: '화장실이 어디예요?', pronunciation: '[돈데 에스따 엘 바뇨?]' },
-            { phrase: '¡Buen provecho!', translation: '맛있게 드세요!', pronunciation: '[부엔 쁘로베쵸!]' },
-            { phrase: 'Hasta luego', translation: '나중에 봐요', pronunciation: '[아스따 루에고]' }
+            { phrase: '¡Mucho gusto en conocerle!', translation: '당신을 알게 되어 정말 기쁩니다.', pronunciation: '[무쵸 구스또 엔 꼬노쎄를레]' },
+            { phrase: '¿Cuál es el siguiente paso?', translation: '다음 단계는 무엇인가요?', pronunciation: '[꾸알 에스 엘 씨기엔떼 빠소?]' },
+            { phrase: 'Estoy de acuerdo con usted.', translation: '당신의 의견에 동의합니다.', pronunciation: '[에스또이 데 아꾸엘도 꼰 우스떼드]' },
+            { phrase: '¿Podemos programar una reunión?', translation: '회의 일정을 잡을 수 있을까요?', pronunciation: '[뽀데모스 쁘로그라마르 우나 레우니온?]' },
+            { phrase: '¡Ha sido un placer!', translation: '즐거운 시간이었습니다!', pronunciation: '[아 씨도 운 쁠라쎌]' },
+            { phrase: '¡Suerte con el proyecto!', translation: '프로젝트에 행운을 빕니다!', pronunciation: '[쑤엘떼 꼰 엘 쁘로옉또!]' }
         ]
     }
 };
