@@ -4,6 +4,12 @@ const languageData = {
         title: 'Korean (한국어)',
         flag: '🇰🇷',
         color: '#14b8a6',
+        basics: [
+            { type: '자음 (Consonants)', items: 'ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ', desc: '14 basic consonants' },
+            { type: '모음 (Vowels)', items: 'ㅏ, ㅑ, ㅓ, ㅕ, ㅗ, ㅛ, ㅜ, ㅠ, ㅡ, ㅣ', desc: '10 basic vowels' },
+            { type: '쌍자음 (Double Consonants)', items: 'ㄲ, ㄸ, ㅃ, ㅆ, ㅉ', desc: '5 double consonants' },
+            { type: '이중모음 (Diphthongs)', items: 'ㅐ, ㅒ, ㅔ, ㅖ, ㅘ, ㅙ, ㅚ, ㅝ, ㅞ, ㅟ, ㅢ', desc: '11 complex vowels' }
+        ],
         vocabulary: [
             { word: '학교', translation: 'School', pronunciation: '[Hak-gyo]' },
             { word: '친구', translation: 'Friend', pronunciation: '[Chin-gu]' },
@@ -39,6 +45,12 @@ const languageData = {
         title: 'English (영어)',
         flag: '🇺🇸',
         color: '#3b82f6',
+        basics: [
+            { type: 'Uppercase (대문자)', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '26 letters' },
+            { type: 'Lowercase (소문자)', items: 'a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z', desc: '26 letters' },
+            { type: 'Vowels (모음)', items: 'A, E, I, O, U', desc: '5 basic vowels' },
+            { type: 'Consonants (자음)', items: 'B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z', desc: '21 consonants' }
+        ],
         vocabulary: [
             { word: 'Library', translation: '도서관', pronunciation: '[라이브러리]' },
             { word: 'Together', translation: '함께', pronunciation: '[투게더]' },
@@ -77,6 +89,12 @@ const languageData = {
         title: 'Chinese (中文)',
         flag: '🇨🇳',
         color: '#ef4444',
+        basics: [
+            { type: 'Initials (성모)', items: 'b, p, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s', desc: 'Beginning consonants' },
+            { type: 'Finals (운모)', items: 'a, o, e, i, u, ü, ai, ei, ui, ao, ou, iu, ie, üe, er, an, en, in, un, ün, ang, eng, ing, ong', desc: 'Vowels and endings' },
+            { type: 'Tones (성조)', items: '1성(¯), 2성(ˊ), 3성(ˇ), 4성(ˋ)', desc: 'ā, á, ǎ, à' },
+            { type: 'Basic Rules', items: 'Pinyin (한어병음)', desc: 'Phonetic system for Mandarin' }
+        ],
         vocabulary: [
             { word: '学生 (Xuésheng)', translation: '학생', pronunciation: '[슈에셩]' },
             { word: '老师 (Lǎoshī)', translation: '선생님', pronunciation: '[라오싀]' },
@@ -87,7 +105,7 @@ const languageData = {
             { word: '朋友 (Péngyǒu)', translation: '친구', pronunciation: '[펑요우]' },
             { word: '北京 (Běijīng)', translation: '베이징', pronunciation: '[베이징]' },
             { word: '汉字 (Hànzì)', translation: '한자', pronunciation: '[한쯔]' },
-            { word: '手机 (Shǒujī)', translation: '휴대폰', pronunciation: '[쇼우지]' }
+            { word: '手机 (Shǒujī)', pronunciation: '[쇼우지]', translation: '휴대폰' }
         ],
         grammar: [
             { rule: 'S + V + O', description: 'Basic sentence structure', example: '我学中文 (I learn Chinese)' },
@@ -112,6 +130,12 @@ const languageData = {
         title: 'Japanese (日本語)',
         flag: '🇯🇵',
         color: '#ec4899',
+        basics: [
+            { type: 'Hiragana (히라가나)', items: 'あ, い, う, え, お, か, き, く, け, こ, さ, し, す, せ, そ...', desc: 'Used for grammar and native words' },
+            { type: 'Katakana (가타카나)', items: 'ア, イ, ウ, エ, オ, カ, キ, ク, ケ, コ, サ, シ, ス, セ, ソ...', desc: 'Used for foreign loanwords' },
+            { type: 'Kanji (한자)', items: '日, 月, 火, 水, 木, 金, 土...', desc: 'Adopted Chinese characters' },
+            { type: 'Tones (악센트)', items: 'High and Low Pitch', desc: 'Distinctive pitch patterns' }
+        ],
         vocabulary: [
             { word: '夢 (Yume)', translation: '꿈', pronunciation: '[유메]' },
             { word: '希望 (Kibō)', translation: '희망', pronunciation: '[키보-]' },
@@ -126,10 +150,10 @@ const languageData = {
         ],
         grammar: [
             { rule: 'は (Wa)', description: 'Topic particle', example: '私は학생입니다 (I am a student)' },
-            { rule: 'の (No)', description: 'Possessive particle', example: '私の本 (My book)' },
-            { rule: 'です (Desu)', description: 'Polite ending for nouns', example: 'きれいです (It is beautiful)' },
-            { rule: 'を (O)', description: 'Object particle', example: 'りんごを食べます (Eat an apple)' },
-            { rule: 'に / へ (Ni / He)', description: 'Destination/Direction', example: '日本に行きます (Go to Japan)' },
+            { rule: '의 (No)', description: 'Possessive particle', example: '私の本 (My book)' },
+            { rule: '입니다 (Desu)', description: 'Polite ending for nouns', example: 'きれいです (It is beautiful)' },
+            { rule: '을/를 (O)', description: 'Object particle', example: 'りんごを食べます (Eat an apple)' },
+            { rule: '에 / 로 (Ni / He)', description: 'Destination/Direction', example: '日本に行きます (Go to Japan)' },
             { rule: '~ている (Te-iru)', description: 'Ongoing action', example: '勉強している (Am studying)' }
         ],
         conversation: [
@@ -192,7 +216,7 @@ class LanguageCard extends HTMLElement {
             <div class="card">
                 <span class="flag">${data.flag}</span>
                 <h3>${data.title}</h3>
-                <p>단어, 문법, 회화 학습</p>
+                <p>기초, 단어, 문법, 회화 학습</p>
             </div>
         `;
 
@@ -212,7 +236,7 @@ class LessonHub extends HTMLElement {
         super();
         this.attachShadow({ mode: 'open' });
         this.currentLang = null;
-        this.currentCategory = 'vocabulary';
+        this.currentCategory = 'basics';
     }
 
     update(langId) {
@@ -273,6 +297,7 @@ class LessonHub extends HTMLElement {
                 .sub-text { font-size: 0.95rem; color: #cbd5e1; }
                 .extra-text { font-size: 0.85rem; color: #94a3b8; font-style: italic; }
                 .example { background: rgba(0,0,0,0.2); padding: 0.75rem; border-radius: 0.75rem; border-left: 3px solid ${data.color}; margin-top: 0.5rem; font-size: 0.85rem; color: #fff; }
+                .items-list { font-size: 1.1rem; color: #fff; line-height: 1.5; background: rgba(0,0,0,0.2); padding: 0.8rem; border-radius: 0.75rem; margin: 0.5rem 0; word-break: break-all; }
 
                 @media (max-width: 600px) {
                     .header { flex-direction: column; align-items: flex-start; }
@@ -286,6 +311,7 @@ class LessonHub extends HTMLElement {
                     <h2>${data.title}</h2>
                 </div>
                 <div class="tabs">
+                    <div class="tab ${this.currentCategory === 'basics' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('basics')">기초</div>
                     <div class="tab ${this.currentCategory === 'vocabulary' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('vocabulary')">단어장</div>
                     <div class="tab ${this.currentCategory === 'grammar' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('grammar')">문법</div>
                     <div class="tab ${this.currentCategory === 'conversation' ? 'active' : ''}" onclick="this.getRootNode().host.setCategory('conversation')">회화</div>
@@ -299,7 +325,15 @@ class LessonHub extends HTMLElement {
 
     renderItems(items) {
         return items.map(item => {
-            if (this.currentCategory === 'vocabulary') {
+            if (this.currentCategory === 'basics') {
+                return `
+                    <div class="item-card">
+                        <span class="label">${item.type}</span>
+                        <div class="items-list">${item.items}</div>
+                        <div class="sub-text">${item.desc}</div>
+                    </div>
+                `;
+            } else if (this.currentCategory === 'vocabulary') {
                 return `
                     <div class="item-card">
                         <span class="label">Vocabulary</span>
