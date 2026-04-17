@@ -1,5 +1,6 @@
 @layer base, components, utilities;
 
+/* 베이스 스타일: CSS 초기화 및 전역 변수 설정 */
 @layer base {
   :root {
     --bg-color: #020617;
@@ -16,6 +17,7 @@
   body {
     font-family: 'Pretendard', 'Inter', sans-serif;
     background: var(--bg-color);
+    /* 배경 그라데이션 효과 */
     background-image: 
         radial-gradient(circle at 20% 20%, rgba(20, 184, 166, 0.05), transparent 40%),
         radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05), transparent 40%);
@@ -25,6 +27,7 @@
     overflow-x: hidden;
   }
 
+  /* 헤더 레이아웃 스타일 */
   header {
     padding: 6rem 1.5rem 4rem;
     text-align: center;
@@ -60,6 +63,7 @@
   }
 }
 
+/* 컴포넌트 스타일: 메인 레이아웃 및 상세 뷰 */
 @layer components {
   main {
     max-width: 1200px;
@@ -67,6 +71,7 @@
     padding: 2rem 1.5rem 8rem;
   }
 
+  /* 카드 그리드 시스템 */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -74,6 +79,7 @@
     margin-bottom: 6rem;
   }
 
+  /* 언어별 학습 상세 뷰 스타일 */
   .lesson-view {
     display: none;
     background: var(--card-bg);
@@ -85,6 +91,7 @@
     margin-top: 2rem;
   }
 
+  /* 활성화 시 나타나는 애니메이션 */
   .lesson-view.active {
     display: block;
     animation: reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -95,6 +102,7 @@
     to { opacity: 1; transform: translateY(0) scale(1); }
   }
 
+  /* 푸터 스타일 */
   footer {
     padding: 4rem 1.5rem;
     text-align: center;
@@ -104,7 +112,7 @@
   }
 }
 
-/* Scrollbar */
+/* 커스텀 스크롤바 디자인 */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }

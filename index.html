@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Language Learning Hub</title>
+    <!-- 외부 스타일시트 연결 -->
     <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트(Inter, Pretendard) 연결 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
 
+<!-- 헤더 영역: 로고 및 메인 타이틀 -->
 <header>
     <div class="logo">LINGUA HUB</div>
     <h1>Explore the World of Languages</h1>
     <p class="subtitle">새로운 언어를 배우는 가장 세련된 방법. 단어부터 문법, 회화까지 한 번에 마스터하세요.</p>
 </header>
 
+<!-- 메인 콘텐츠 영역 -->
 <main>
+    <!-- 언어 선택 카드 그리드 -->
     <div class="grid-container">
+        <!-- 커스텀 엘리먼트 <language-card> 사용 -->
         <language-card lang-id="korean"></language-card>
         <language-card lang-id="english"></language-card>
         <language-card lang-id="chinese"></language-card>
         <language-card lang-id="japanese"></language-card>
     </div>
 
+    <!-- 상세 학습 내용 표시 섹션 (언어 선택 전에는 숨겨짐) -->
     <section id="lesson-section" class="lesson-view">
         <lesson-hub></lesson-hub>
     </section>
 </main>
 
+<!-- 푸터 영역 -->
 <footer>
     <p>&copy; 2026 Global Language Learning Hub. <br> Modern Web Experience with Web Components.</p>
 </footer>
 
+<!-- 메인 자바스크립트 파일 연결 -->
 <script src="main.js"></script>
 </body>
 </html>

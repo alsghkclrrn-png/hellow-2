@@ -1,15 +1,21 @@
 
+/**
+ * 각 언어별 학습 데이터를 담고 있는 객체입니다.
+ * 기초(Basics), 단어장(Vocabulary), 문법(Grammar), 회화(Conversation) 카테고리를 포함합니다.
+ */
 const languageData = {
     'korean': {
         title: 'Korean (한국어)',
         flag: '🇰🇷',
         color: '#14b8a6',
+        // 한국어 기초: 자음과 모음
         basics: [
             { type: '자음 (Consonants)', items: 'ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ', desc: '14 basic consonants' },
             { type: '모음 (Vowels)', items: 'ㅏ, ㅑ, ㅓ, ㅕ, ㅗ, ㅛ, ㅜ, ㅠ, ㅡ, ㅣ', desc: '10 basic vowels' },
             { type: '쌍자음 (Double Consonants)', items: 'ㄲ, ㄸ, ㅃ, ㅆ, ㅉ', desc: '5 double consonants' },
             { type: '이중모음 (Diphthongs)', items: 'ㅐ, ㅒ, ㅔ, ㅖ, ㅘ, ㅙ, ㅚ, ㅝ, ㅞ, ㅟ, ㅢ', desc: '11 complex vowels' }
         ],
+        // 한국어 단어장
         vocabulary: [
             { word: '학교', translation: 'School', pronunciation: '[Hak-gyo]' },
             { word: '친구', translation: 'Friend', pronunciation: '[Chin-gu]' },
@@ -22,6 +28,7 @@ const languageData = {
             { word: '바다', translation: 'Sea', pronunciation: '[Ba-da]' },
             { word: '사랑', translation: 'Love', pronunciation: '[Sa-rang]' }
         ],
+        // 한국어 문법
         grammar: [
             { rule: '-은/는', description: 'Topic particle (Subject marker)', example: '저는 학생입니다. (I am a student.)' },
             { rule: '-이/가', description: 'Subject particle (Emphasizing the subject)', example: '친구가 옵니다. (A friend is coming.)' },
@@ -30,6 +37,7 @@ const languageData = {
             { rule: '-요 / -습니다', description: 'Polite ending styles', example: '가요 (Polite) / 갑니다 (Formal).' },
             { rule: '현재 진행형 (-고 있다)', description: 'Present continuous', example: '밥을 먹고 있어요. (I am eating.)' }
         ],
+        // 한국어 회화
         conversation: [
             { phrase: '반갑습니다', translation: 'Nice to meet you', pronunciation: '[Ban-gap-seum-ni-da]' },
             { phrase: '이름이 뭐예요?', translation: 'What is your name?', pronunciation: '[I-reum-i mwo-ye-yo?]' },
@@ -45,12 +53,14 @@ const languageData = {
         title: 'English (영어)',
         flag: '🇺🇸',
         color: '#3b82f6',
+        // 영어 기초: 알파벳 자음과 모음
         basics: [
             { type: 'Uppercase (대문자)', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '26 letters' },
             { type: 'Lowercase (소문자)', items: 'a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z', desc: '26 letters' },
             { type: 'Vowels (모음)', items: 'A, E, I, O, U', desc: '5 basic vowels' },
             { type: 'Consonants (자음)', items: 'B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z', desc: '21 consonants' }
         ],
+        // 영어 단어장
         vocabulary: [
             { word: 'Library', translation: '도서관', pronunciation: '[라이브러리]' },
             { word: 'Together', translation: '함께', pronunciation: '[투게더]' },
@@ -63,6 +73,7 @@ const languageData = {
             { word: 'Challenge', translation: '도전', pronunciation: '[챌린지]' },
             { word: 'Opportunity', translation: '기회', pronunciation: '[오퍼튜니티]' }
         ],
+        // 영어 문법 (EnglishCube.net 기반)
         grammar: [
             { rule: 'Verb Types', description: 'Main Verbs vs Auxiliary Verbs', example: 'I swim (Main) / I can swim (Auxiliary).' },
             { rule: 'Sentence Structure', description: 'Subject (S) + Verb (V) is the base.', example: 'He runs. / They play soccer.' },
@@ -74,6 +85,7 @@ const languageData = {
             { rule: 'Future Perfect', description: 'will + have + p.p (Completion in future).', example: 'I will have finished it by tomorrow.' },
             { rule: 'Should Have p.p', description: 'Regret about something not done in the past.', example: 'I should have studied harder.' }
         ],
+        // 영어 회화
         conversation: [
             { phrase: 'How are you?', translation: '어떻게 지내세요?', pronunciation: '[하우 아 유?]' },
             { phrase: 'Could you help me?', translation: '좀 도와주시겠어요?', pronunciation: '[쿠쥬 헬프 미?]' },
@@ -89,12 +101,14 @@ const languageData = {
         title: 'Chinese (中文)',
         flag: '🇨🇳',
         color: '#ef4444',
+        // 중국어 기초: 성모, 운모, 성조
         basics: [
             { type: 'Initials (성모)', items: 'b, p, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s', desc: 'Beginning consonants' },
             { type: 'Finals (운모)', items: 'a, o, e, i, u, ü, ai, ei, ui, ao, ou, iu, ie, üe, er, an, en, in, un, ün, ang, eng, ing, ong', desc: 'Vowels and endings' },
             { type: 'Tones (성조)', items: '1성(¯), 2성(ˊ), 3성(ˇ), 4성(ˋ)', desc: 'ā, á, ǎ, à' },
             { type: 'Basic Rules', items: 'Pinyin (한어병음)', desc: 'Phonetic system for Mandarin' }
         ],
+        // 중국어 단어장
         vocabulary: [
             { word: '学生 (Xuésheng)', translation: '학생', pronunciation: '[슈에셩]' },
             { word: '老师 (Lǎoshī)', translation: '선생님', pronunciation: '[라오싀]' },
@@ -107,6 +121,7 @@ const languageData = {
             { word: '汉字 (Hànzì)', translation: '한자', pronunciation: '[한쯔]' },
             { word: '手机 (Shǒujī)', pronunciation: '[쇼우지]', translation: '휴대폰' }
         ],
+        // 중국어 문법
         grammar: [
             { rule: 'S + V + O', description: 'Basic sentence structure', example: '我学中文 (I learn Chinese)' },
             { rule: '吗 (Ma)', description: 'Question particle at the end', example: '你好吗? (How are you?)' },
@@ -115,6 +130,7 @@ const languageData = {
             { rule: '在 (Zài)', description: 'Continuous action / location', example: '我在看书 (I am reading)' },
             { rule: '不 / 没 (Bù / Méi)', description: 'Negation prefixes', example: '我不去 / 我没有' }
         ],
+        // 중국어 회화
         conversation: [
             { phrase: '好久不见 (Hǎojiǔ bùjiàn)', translation: '오랜만이에요', pronunciation: '[하오지우 부지엔]' },
             { phrase: '你吃饭了吗? (Nǐ chīfànle ma?)', translation: '밥 먹었니?', pronunciation: '[니 츠판러 마?]' },
@@ -130,12 +146,14 @@ const languageData = {
         title: 'Japanese (日本語)',
         flag: '🇯🇵',
         color: '#ec4899',
+        // 일본어 기초: 히라가나, 가타카나
         basics: [
-            { type: 'Hiragana (히라가나)', items: 'あ, い, う, え, お, か, き, く, け, こ, さ, し, す, せ, そ...', desc: 'Used for grammar and native words' },
+            { type: 'Hiragana (히라가나)', items: 'あ, い, う, え, お, か, 기, 쿠, け, こ, さ, し, す, せ, そ...', desc: 'Used for grammar and native words' },
             { type: 'Katakana (가타카나)', items: 'ア, イ, ウ, エ, オ, カ, キ, ク, ケ, コ, サ, シ, ス, セ, ソ...', desc: 'Used for foreign loanwords' },
             { type: 'Kanji (한자)', items: '日, 月, 火, 水, 木, 金, 土...', desc: 'Adopted Chinese characters' },
             { type: 'Tones (악센트)', items: 'High and Low Pitch', desc: 'Distinctive pitch patterns' }
         ],
+        // 일본어 단어장
         vocabulary: [
             { word: '夢 (Yume)', translation: '꿈', pronunciation: '[유메]' },
             { word: '希望 (Kibō)', translation: '희망', pronunciation: '[키보-]' },
@@ -148,14 +166,16 @@ const languageData = {
             { word: '世界 (Sekai)', translation: '세계', pronunciation: '[세카이]' },
             { word: '平和 (Heiwa)', translation: '평화', pronunciation: '[헤이와]' }
         ],
+        // 일본어 문법
         grammar: [
             { rule: 'は (Wa)', description: 'Topic particle', example: '私は학생입니다 (I am a student)' },
             { rule: '의 (No)', description: 'Possessive particle', example: '私の本 (My book)' },
-            { rule: '입니다 (Desu)', description: 'Polite ending for nouns', example: 'きれいです (It is beautiful)' },
+            { rule: '입니다 (Desu)', description: 'Polite ending for nouns', example: 'き레입니다 (It is beautiful)' },
             { rule: '을/를 (O)', description: 'Object particle', example: 'りんごを食べます (Eat an apple)' },
             { rule: '에 / 로 (Ni / He)', description: 'Destination/Direction', example: '日本に行きます (Go to Japan)' },
             { rule: '~ている (Te-iru)', description: 'Ongoing action', example: '勉強している (Am studying)' }
         ],
+        // 일본어 회화
         conversation: [
             { phrase: 'お疲れ様です', translation: '수고하셨습니다', pronunciation: '[오츠카레사마데스]' },
             { phrase: 'はじめまして', translation: '처음 뵙겠습니다', pronunciation: '[하지메마시테]' },
@@ -169,6 +189,9 @@ const languageData = {
     }
 };
 
+/**
+ * 언어 선택 카드를 담당하는 웹 컴포넌트 클래스입니다.
+ */
 class LanguageCard extends HTMLElement {
     constructor() {
         super();
@@ -220,6 +243,7 @@ class LanguageCard extends HTMLElement {
             </div>
         `;
 
+        // 카드 클릭 시 이벤트 발생
         this.addEventListener('click', () => {
             const event = new CustomEvent('lang-selected', {
                 detail: { id: this.getAttribute('lang-id') },
@@ -231,6 +255,9 @@ class LanguageCard extends HTMLElement {
     }
 }
 
+/**
+ * 학습 상세 내용을 표시하는 허브 웹 컴포넌트 클래스입니다.
+ */
 class LessonHub extends HTMLElement {
     constructor() {
         super();
@@ -239,11 +266,13 @@ class LessonHub extends HTMLElement {
         this.currentCategory = 'basics';
     }
 
+    // 선택된 언어 업데이트
     update(langId) {
         this.currentLang = langId;
         this.render();
     }
 
+    // 카테고리(탭) 변경
     setCategory(cat) {
         this.currentCategory = cat;
         this.render();
@@ -323,6 +352,7 @@ class LessonHub extends HTMLElement {
         `;
     }
 
+    // 아이템 리스트 렌더링
     renderItems(items) {
         return items.map(item => {
             if (this.currentCategory === 'basics') {
@@ -365,10 +395,11 @@ class LessonHub extends HTMLElement {
     }
 }
 
+// 커스텀 엘리먼트 정의
 customElements.define('language-card', LanguageCard);
 customElements.define('lesson-hub', LessonHub);
 
-// App Logic
+// 애플리케이션 로직: 언어 선택 시 상세 영역 활성화 및 스크롤
 document.addEventListener('lang-selected', (e) => {
     const hub = document.querySelector('lesson-hub');
     const section = document.querySelector('#lesson-section');
