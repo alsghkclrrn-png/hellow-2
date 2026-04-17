@@ -8,17 +8,31 @@ const languageData = {
             { word: '학교', translation: 'School', pronunciation: '[Hak-gyo]' },
             { word: '친구', translation: 'Friend', pronunciation: '[Chin-gu]' },
             { word: '사과', translation: 'Apple', pronunciation: '[Sa-gwa]' },
-            { word: '책', translation: 'Book', pronunciation: '[Chaek]' }
+            { word: '책', translation: 'Book', pronunciation: '[Chaek]' },
+            { word: '음식', translation: 'Food', pronunciation: '[Eum-sik]' },
+            { word: '공부', translation: 'Study', pronunciation: '[Gong-bu]' },
+            { word: '시간', translation: 'Time', pronunciation: '[Si-gan]' },
+            { word: '하늘', translation: 'Sky', pronunciation: '[Ha-neul]' },
+            { word: '바다', translation: 'Sea', pronunciation: '[Ba-da]' },
+            { word: '사랑', translation: 'Love', pronunciation: '[Sa-rang]' }
         ],
         grammar: [
-            { rule: '-은/는', description: 'Topic particle', example: '저는 학생입니다. (I am a student.)' },
-            { rule: '-이/가', description: 'Subject particle', example: '친구가 옵니다. (A friend is coming.)' },
-            { rule: '-을/를', description: 'Object particle', example: '사과를 먹어요. (I eat an apple.)' }
+            { rule: '-은/는', description: 'Topic particle (Subject marker)', example: '저는 학생입니다. (I am a student.)' },
+            { rule: '-이/가', description: 'Subject particle (Emphasizing the subject)', example: '친구가 옵니다. (A friend is coming.)' },
+            { rule: '-을/를', description: 'Object particle', example: '사과를 먹어요. (I eat an apple.)' },
+            { rule: '-에/에서', description: 'Location/Place particles', example: '학교에 가요 / 집에서 공부해요.' },
+            { rule: '-요 / -습니다', description: 'Polite ending styles', example: '가요 (Polite) / 갑니다 (Formal).' },
+            { rule: '현재 진행형 (-고 있다)', description: 'Present continuous', example: '밥을 먹고 있어요. (I am eating.)' }
         ],
         conversation: [
             { phrase: '반갑습니다', translation: 'Nice to meet you', pronunciation: '[Ban-gap-seum-ni-da]' },
             { phrase: '이름이 뭐예요?', translation: 'What is your name?', pronunciation: '[I-reum-i mwo-ye-yo?]' },
-            { phrase: '잘 지냈어요?', translation: 'How have you been?', pronunciation: '[Jal ji-nae-sseo-yo?]' }
+            { phrase: '잘 지냈어요?', translation: 'How have you been?', pronunciation: '[Jal ji-nae-sseo-yo?]' },
+            { phrase: '이거 얼마예요?', translation: 'How much is this?', pronunciation: '[I-geo eol-ma-ye-yo?]' },
+            { phrase: '화장실 어디예요?', translation: 'Where is the restroom?', pronunciation: '[Hwa-jang-sil eo-di-ye-yo?]' },
+            { phrase: '감사합니다 / 고마워요', translation: 'Thank you (Formal / Polite)', pronunciation: '[Gam-sa-ham-ni-da]' },
+            { phrase: '미안합니다 / 죄송해요', translation: 'I am sorry', pronunciation: '[Mi-an-ham-ni-da]' },
+            { phrase: '다음에 또 봐요', translation: 'See you next time', pronunciation: '[Da-eum-e tto bwa-yo]' }
         ]
     },
     'english': {
@@ -29,17 +43,31 @@ const languageData = {
             { word: 'Library', translation: '도서관', pronunciation: '[라이브러리]' },
             { word: 'Together', translation: '함께', pronunciation: '[투게더]' },
             { word: 'Delicious', translation: '맛있는', pronunciation: '[딜리셔스]' },
-            { word: 'Journey', translation: '여정', pronunciation: '[저니]' }
+            { word: 'Journey', translation: '여정', pronunciation: '[저니]' },
+            { word: 'Innovation', translation: '혁신', pronunciation: '[이노베이션]' },
+            { word: 'Experience', translation: '경험', pronunciation: '[익스피리언스]' },
+            { word: 'Language', translation: '언어', pronunciation: '[랭귀지]' },
+            { word: 'Success', translation: '성공', pronunciation: '[석세스]' },
+            { word: 'Challenge', translation: '도전', pronunciation: '[챌린지]' },
+            { word: 'Opportunity', translation: '기회', pronunciation: '[오퍼튜니티]' }
         ],
         grammar: [
             { rule: 'Present Simple', description: 'Used for habits/truths', example: 'I study every day.' },
-            { rule: 'Articles (a/an/the)', description: 'Determiners', example: 'A book, An apple, The sun.' },
-            { rule: 'Plural Nouns', description: 'Adding -s/es', example: 'Dog -> Dogs, Box -> Boxes' }
+            { rule: 'Articles (a/an/the)', description: 'Determiners for nouns', example: 'A book, An apple, The sun.' },
+            { rule: 'Plural Nouns', description: 'Adding -s/es to words', example: 'Dog -> Dogs, Box -> Boxes' },
+            { rule: 'Past Tense (-ed)', description: 'Completed actions', example: 'I worked yesterday.' },
+            { rule: 'Modal Verbs (Can/Should)', description: 'Ability and advice', example: 'I can swim / You should go.' },
+            { rule: 'Prepositions', description: 'In, On, At for time/place', example: 'In the morning / On the table.' }
         ],
         conversation: [
             { phrase: 'How are you?', translation: '어떻게 지내세요?', pronunciation: '[하우 아 유?]' },
             { phrase: 'Could you help me?', translation: '좀 도와주시겠어요?', pronunciation: '[쿠쥬 헬프 미?]' },
-            { phrase: 'Nice weather!', translation: '날씨 좋네요!', pronunciation: '[나이스 웨더!]' }
+            { phrase: 'Nice weather!', translation: '날씨 좋네요!', pronunciation: '[나이스 웨더!]' },
+            { phrase: 'What do you recommend?', translation: '무엇을 추천하시나요?', pronunciation: '[왓 두 유 레코멘드?]' },
+            { phrase: 'Where is the station?', translation: '기차역이 어디인가요?', pronunciation: '[웨어 이즈 더 스테이션?]' },
+            { phrase: 'Nice to meet you', translation: '만나서 반가워요', pronunciation: '[나이스 투 미트 유]' },
+            { phrase: 'Have a great day!', translation: '좋은 하루 보내세요!', pronunciation: '[해브 어 그레이트 데이!]' },
+            { phrase: 'I am looking for...', translation: '...를 찾고 있어요', pronunciation: '[아임 루킹 포...]' }
         ]
     },
     'chinese': {
@@ -50,17 +78,31 @@ const languageData = {
             { word: '学生 (Xuésheng)', translation: '학생', pronunciation: '[슈에셩]' },
             { word: '老师 (Lǎoshī)', translation: '선생님', pronunciation: '[라오싀]' },
             { word: '开心 (Kāixīn)', translation: '행복하다', pronunciation: '[카이씬]' },
-            { word: '努力 (Nǔlì)', translation: '노력하다', pronunciation: '[누리]' }
+            { word: '努力 (Nǔlì)', translation: '노력하다', pronunciation: '[누리]' },
+            { word: '漂亮 (Piàoliang)', translation: '예쁘다', pronunciation: '[피아오리앙]' },
+            { word: '时间 (Shíjiān)', translation: '시간', pronunciation: '[싀지엔]' },
+            { word: '朋友 (Péngyǒu)', translation: '친구', pronunciation: '[펑요우]' },
+            { word: '北京 (Běijīng)', translation: '베이징', pronunciation: '[베이징]' },
+            { word: '汉字 (Hànzì)', translation: '한자', pronunciation: '[한쯔]' },
+            { word: '手机 (Shǒujī)', translation: '휴대폰', pronunciation: '[쇼우지]' }
         ],
         grammar: [
             { rule: 'S + V + O', description: 'Basic sentence structure', example: '我学中文 (I learn Chinese)' },
-            { rule: '吗 (Ma)', description: 'Question particle', example: '你好吗? (How are you?)' },
-            { rule: '的 (De)', description: 'Possessive particle', example: '我的书 (My book)' }
+            { rule: '吗 (Ma)', description: 'Question particle at the end', example: '你好吗? (How are you?)' },
+            { rule: '的 (De)', description: 'Possessive or descriptive', example: '我的书 (My book)' },
+            { rule: '了 (Le)', description: 'Change of state or completion', example: '我吃饭了 (I have eaten)' },
+            { rule: '在 (Zài)', description: 'Continuous action / location', example: '我在看书 (I am reading)' },
+            { rule: '不 / 没 (Bù / Méi)', description: 'Negation prefixes', example: '我不去 / 我没有' }
         ],
         conversation: [
             { phrase: '好久不见 (Hǎojiǔ bùjiàn)', translation: '오랜만이에요', pronunciation: '[하오지우 부지엔]' },
             { phrase: '你吃饭了吗? (Nǐ chīfànle ma?)', translation: '밥 먹었니?', pronunciation: '[니 츠판러 마?]' },
-            { phrase: '加油! (Jiāyóu!)', translation: '화이팅!', pronunciation: '[짜요!]' }
+            { phrase: '加油! (Jiāyóu!)', translation: '화이팅!', pronunciation: '[짜요!]' },
+            { phrase: '多少钱? (Duōshǎo qián?)', translation: '얼마예요?', pronunciation: '[뚜오샤오 치엔]' },
+            { phrase: '谢谢你的帮助 (Xièxiè nǐ de bāngzhù)', translation: '도와주셔서 감사합니다', pronunciation: '[씨에씨에 니 더 빵주]' },
+            { phrase: '我不懂 (Wǒ bù dǒng)', translation: '이해하지 못했어요', pronunciation: '[워 부 동]' },
+            { phrase: '认识你很高兴 (Rènshì nǐ hěn gāoxìng)', translation: '만나서 정말 기뻐요', pronunciation: '[런싀 니 헌 까오씽]' },
+            { phrase: '慢走 (Màn zǒu)', translation: '조심히 가세요', pronunciation: '[만 조우]' }
         ]
     },
     'japanese': {
@@ -71,17 +113,31 @@ const languageData = {
             { word: '夢 (Yume)', translation: '꿈', pronunciation: '[유메]' },
             { word: '希望 (Kibō)', translation: '희망', pronunciation: '[키보-]' },
             { word: '元気 (Genki)', translation: '건강/활기', pronunciation: '[겐키]' },
-            { word: '心 (Kokoro)', translation: '마음', pronunciation: '[코코로]' }
+            { word: '心 (Kokoro)', translation: '마음', pronunciation: '[코코로]' },
+            { word: '桜 (Sakura)', translation: '벚꽃', pronunciation: '[사쿠라]' },
+            { word: '友達 (Tomodachi)', translation: '친구', pronunciation: '[토모다치]' },
+            { word: '未来 (Mirai)', translation: '미래', pronunciation: '[미라이]' },
+            { word: '旅行 (Ryokō)', translation: '여행', pronunciation: '[료코-]' },
+            { word: '世界 (Sekai)', translation: '세계', pronunciation: '[세카이]' },
+            { word: '平和 (Heiwa)', translation: '평화', pronunciation: '[헤이와]' }
         ],
         grammar: [
             { rule: 'は (Wa)', description: 'Topic particle', example: '私は学生です (I am a student)' },
             { rule: 'の (No)', description: 'Possessive particle', example: '私の本 (My book)' },
-            { rule: 'です (Desu)', description: 'Polite ending', example: 'きれいです (It is beautiful)' }
+            { rule: 'です (Desu)', description: 'Polite ending for nouns', example: 'きれいです (It is beautiful)' },
+            { rule: 'を (O)', description: 'Object particle', example: 'りんごを食べます (Eat an apple)' },
+            { rule: 'に / へ (Ni / He)', description: 'Destination/Direction', example: '日本に行きます (Go to Japan)' },
+            { rule: '~ている (Te-iru)', description: 'Ongoing action', example: '勉強している (Am studying)' }
         ],
         conversation: [
             { phrase: 'お疲れ様です', translation: '수고하셨습니다', pronunciation: '[오츠카레사마데스]' },
             { phrase: 'はじめまして', translation: '처음 뵙겠습니다', pronunciation: '[하지메마시테]' },
-            { phrase: '頑張って!', translation: '힘내세요!', pronunciation: '[간밧테!]' }
+            { phrase: '頑張って!', translation: '힘내세요!', pronunciation: '[간밧테!]' },
+            { phrase: 'いくらですか? (Ikura desu ka?)', translation: '얼마입니까?', pronunciation: '[이크라데스까]' },
+            { phrase: 'すみません (Sumimasen)', translation: '실례합니다 / 저기요', pronunciation: '[스미마셍]' },
+            { phrase: 'おいしいです (Oishii desu)', translation: '맛있습니다', pronunciation: '[오이시이데스]' },
+            { phrase: 'また会いましょう (Mata aimashō)', translation: '또 만나요', pronunciation: '[마타 아이마쇼-]' },
+            { phrase: '助けてください (Tasukete kudasai)', translation: '도와주세요', pronunciation: '[타스케테 쿠다사이]' }
         ]
     }
 };
@@ -193,7 +249,7 @@ class LessonHub extends HTMLElement {
 
                 .grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                     gap: 1.5rem;
                 }
                 
@@ -210,10 +266,10 @@ class LessonHub extends HTMLElement {
                 .item-card:hover { transform: translateY(-4px); background: rgba(255, 255, 255, 0.06); border-color: ${data.color}33; }
                 
                 .label { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: ${data.color}; opacity: 0.8; }
-                .main-text { font-size: 1.5rem; font-weight: 700; color: #fff; }
-                .sub-text { font-size: 1rem; color: #cbd5e1; }
-                .extra-text { font-size: 0.9rem; color: #94a3b8; font-style: italic; }
-                .example { background: rgba(0,0,0,0.2); padding: 0.75rem; border-radius: 0.75rem; border-left: 3px solid ${data.color}; margin-top: 0.5rem; font-size: 0.9rem; }
+                .main-text { font-size: 1.25rem; font-weight: 700; color: #fff; }
+                .sub-text { font-size: 0.95rem; color: #cbd5e1; }
+                .extra-text { font-size: 0.85rem; color: #94a3b8; font-style: italic; }
+                .example { background: rgba(0,0,0,0.2); padding: 0.75rem; border-radius: 0.75rem; border-left: 3px solid ${data.color}; margin-top: 0.5rem; font-size: 0.85rem; color: #fff; }
 
                 @media (max-width: 600px) {
                     .header { flex-direction: column; align-items: flex-start; }
