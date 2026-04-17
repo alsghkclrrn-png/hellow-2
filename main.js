@@ -8,25 +8,25 @@ const languageData = {
         title: 'Korean (한국어)',
         flag: '🇰🇷',
         color: '#14b8a6',
-        // 한국어 기초: 자음과 모음
+        // 한국어 기초: 자음과 모음 (발음 포함)
         basics: [
-            { type: '자음 (Consonants)', items: 'ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ', desc: '14 basic consonants' },
-            { type: '모음 (Vowels)', items: 'ㅏ, ㅑ, ㅓ, ㅕ, ㅗ, ㅛ, ㅜ, ㅠ, ㅡ, ㅣ', desc: '10 basic vowels' },
-            { type: '쌍자음 (Double Consonants)', items: 'ㄲ, ㄸ, ㅃ, ㅆ, ㅉ', desc: '5 double consonants' },
-            { type: '이중모음 (Diphthongs)', items: 'ㅐ, ㅒ, ㅔ, ㅖ, ㅘ, ㅙ, ㅚ, ㅝ, ㅞ, ㅟ, ㅢ', desc: '11 complex vowels' }
+            { type: '자음 (Consonants)', items: 'ㄱ(기역), ㄴ(니은), ㄷ(디귿), ㄹ(리을), ㅁ(미음), ㅂ(비읍), ㅅ(시옷), ㅇ(이응), ㅈ(지읒), ㅊ(치읓), ㅋ(키읔), ㅌ(티읕), ㅍ(피읖), ㅎ(히읗)', desc: '14 basic consonants' },
+            { type: '모음 (Vowels)', items: 'ㅏ(아), ㅑ(야), ㅓ(어), ㅕ(여), ㅗ(오), ㅛ(요), ㅜ(우), ㅠ(유), ㅡ(으), ㅣ(이)', desc: '10 basic vowels' },
+            { type: '쌍자음 (Double Consonants)', items: 'ㄲ(쌍기역), ㄸ(쌍디귿), ㅃ(쌍비읍), ㅆ(쌍시옷), ㅉ(쌍지읒)', desc: '5 double consonants' },
+            { type: '이중모음 (Diphthongs)', items: 'ㅐ(애), ㅒ(얘), ㅔ(에), ㅖ(예), ㅘ(와), ㅙ(왜), ㅚ(외), ㅝ(워), ㅞ(웨), ㅟ(위), ㅢ(의)', desc: '11 complex vowels' }
         ],
-        // 한국어 단어장
+        // 한국어 단어장 (한글 발음 적용)
         vocabulary: [
-            { word: '학교', translation: 'School', pronunciation: '[Hak-gyo]' },
-            { word: '친구', translation: 'Friend', pronunciation: '[Chin-gu]' },
-            { word: '사과', translation: 'Apple', pronunciation: '[Sa-gwa]' },
-            { word: '책', translation: 'Book', pronunciation: '[Chaek]' },
-            { word: '음식', translation: 'Food', pronunciation: '[Eum-sik]' },
-            { word: '공부', translation: 'Study', pronunciation: '[Gong-bu]' },
-            { word: '시간', translation: 'Time', pronunciation: '[Si-gan]' },
-            { word: '하늘', translation: 'Sky', pronunciation: '[Ha-neul]' },
-            { word: '바다', translation: 'Sea', pronunciation: '[Ba-da]' },
-            { word: '사랑', translation: 'Love', pronunciation: '[Sa-rang]' }
+            { word: '학교', translation: 'School', pronunciation: '[학교]' },
+            { word: '친구', translation: 'Friend', pronunciation: '[친구]' },
+            { word: '사과', translation: 'Apple', pronunciation: '[사과]' },
+            { word: '책', translation: 'Book', pronunciation: '[책]' },
+            { word: '음식', translation: 'Food', pronunciation: '[음식]' },
+            { word: '공부', translation: 'Study', pronunciation: '[공부]' },
+            { word: '시간', translation: 'Time', pronunciation: '[시간]' },
+            { word: '하늘', translation: 'Sky', pronunciation: '[하늘]' },
+            { word: '바다', translation: 'Sea', pronunciation: '[바다]' },
+            { word: '사랑', translation: 'Love', pronunciation: '[사랑]' }
         ],
         // 한국어 문법
         grammar: [
@@ -37,30 +37,30 @@ const languageData = {
             { rule: '-요 / -습니다', description: 'Polite ending styles', example: '가요 (Polite) / 갑니다 (Formal).' },
             { rule: '현재 진행형 (-고 있다)', description: 'Present continuous', example: '밥을 먹고 있어요. (I am eating.)' }
         ],
-        // 한국어 회화
+        // 한국어 회화 (실제 발음법 적용)
         conversation: [
-            { phrase: '반갑습니다', translation: 'Nice to meet you', pronunciation: '[Ban-gap-seum-ni-da]' },
-            { phrase: '이름이 뭐예요?', translation: 'What is your name?', pronunciation: '[I-reum-i mwo-ye-yo?]' },
-            { phrase: '잘 지냈어요?', translation: 'How have you been?', pronunciation: '[Jal ji-nae-sseo-yo?]' },
-            { phrase: '이거 얼마예요?', translation: 'How much is this?', pronunciation: '[I-geo eol-ma-ye-yo?]' },
-            { phrase: '화장실 어디예요?', translation: 'Where is the restroom?', pronunciation: '[Hwa-jang-sil eo-di-ye-yo?]' },
-            { phrase: '감사합니다 / 고마워요', translation: 'Thank you (Formal / Polite)', pronunciation: '[Gam-sa-ham-ni-da]' },
-            { phrase: '미안합니다 / 죄송해요', translation: 'I am sorry', pronunciation: '[Mi-an-ham-ni-da]' },
-            { phrase: '다음에 또 봐요', translation: 'See you next time', pronunciation: '[Da-eum-e tto bwa-yo]' }
+            { phrase: '반갑습니다', translation: 'Nice to meet you', pronunciation: '[반갑씀니다]' },
+            { phrase: '이름이 뭐예요?', translation: 'What is your name?', pronunciation: '[이르미 뭐예요?]' },
+            { phrase: '잘 지냈어요?', translation: 'How have you been?', pronunciation: '[잘 지내써요?]' },
+            { phrase: '이거 얼마예요?', translation: 'How much is this?', pronunciation: '[이거 얼마예요?]' },
+            { phrase: '화장실 어디예요?', pronunciation: '[화장실 어디예요?]', translation: 'Where is the restroom?' },
+            { phrase: '감사합니다 / 고마워요', translation: 'Thank you', pronunciation: '[감사함니다 / 고마워요]' },
+            { phrase: '미안합니다 / 죄송해요', translation: 'I am sorry', pronunciation: '[미안함니다 / 죄송해요]' },
+            { phrase: '다음에 또 봐요', translation: 'See you next time', pronunciation: '[다음에 또 봐요]' }
         ]
     },
     'english': {
         title: 'English (영어)',
         flag: '🇺🇸',
         color: '#3b82f6',
-        // 영어 기초: 알파벳 자음과 모음
+        // 영어 기초 (한글 발음 추가)
         basics: [
-            { type: 'Uppercase (대문자)', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '26 letters' },
+            { type: 'Uppercase (대문자)', items: 'A(에이), B(비), C(씨), D(디), E(이), F(에프), G(쥐), H(에이치), I(아이), J(제이), K(케이), L(엘), M(엠), N(엔), O(오), P(피), Q(큐), R(알), S(에스), T(티), U(유), V(브이), W(더블유), X(엑스), Y(와이), Z(지/제드)', desc: '26 letters' },
             { type: 'Lowercase (소문자)', items: 'a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z', desc: '26 letters' },
-            { type: 'Vowels (모음)', items: 'A, E, I, O, U', desc: '5 basic vowels' },
+            { type: 'Vowels (모음)', items: 'A, E, I, O, U (에이, 이, 아이, 오, 유)', desc: '5 basic vowels' },
             { type: 'Consonants (자음)', items: 'B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z', desc: '21 consonants' }
         ],
-        // 영어 단어장
+        // 영어 단어장 (한글 발음)
         vocabulary: [
             { word: 'Library', translation: '도서관', pronunciation: '[라이브러리]' },
             { word: 'Together', translation: '함께', pronunciation: '[투게더]' },
@@ -73,7 +73,7 @@ const languageData = {
             { word: 'Challenge', translation: '도전', pronunciation: '[챌린지]' },
             { word: 'Opportunity', translation: '기회', pronunciation: '[오퍼튜니티]' }
         ],
-        // 영어 문법 (EnglishCube.net 기반)
+        // 영어 문법
         grammar: [
             { rule: 'Verb Types', description: 'Main Verbs vs Auxiliary Verbs', example: 'I swim (Main) / I can swim (Auxiliary).' },
             { rule: 'Sentence Structure', description: 'Subject (S) + Verb (V) is the base.', example: 'He runs. / They play soccer.' },
@@ -85,7 +85,7 @@ const languageData = {
             { rule: 'Future Perfect', description: 'will + have + p.p (Completion in future).', example: 'I will have finished it by tomorrow.' },
             { rule: 'Should Have p.p', description: 'Regret about something not done in the past.', example: 'I should have studied harder.' }
         ],
-        // 영어 회화
+        // 영어 회화 (한글 발음)
         conversation: [
             { phrase: 'How are you?', translation: '어떻게 지내세요?', pronunciation: '[하우 아 유?]' },
             { phrase: 'Could you help me?', translation: '좀 도와주시겠어요?', pronunciation: '[쿠쥬 헬프 미?]' },
@@ -101,14 +101,14 @@ const languageData = {
         title: 'Chinese (中文)',
         flag: '🇨🇳',
         color: '#ef4444',
-        // 중국어 기초: 성모, 운모, 성조
+        // 중국어 기초 (한글 발음 상세화)
         basics: [
-            { type: 'Initials (성모)', items: 'b, p, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s', desc: 'Beginning consonants' },
-            { type: 'Finals (운모)', items: 'a, o, e, i, u, ü, ai, ei, ui, ao, ou, iu, ie, üe, er, an, en, in, un, ün, ang, eng, ing, ong', desc: 'Vowels and endings' },
-            { type: 'Tones (성조)', items: '1성(¯), 2성(ˊ), 3성(ˇ), 4성(ˋ)', desc: 'ā, á, ǎ, à' },
+            { type: 'Initials (성모)', items: 'b(뽀), p(포), m(모), f(포), d(뜨), t(트), n(느), l(르), g(끄), k(크), h(흐), j(지), q(치), x(시), zh(즈), ch(츠), sh(싀), r(르), z(쯔), c(츠), s(쓰)', desc: 'Beginning consonants' },
+            { type: 'Finals (운모)', items: 'a(아), o(오), e(어), i(이), u(우), ü(위), ai(아이), ei(에이), ui(웨이), ao(아오), ou(오우), iu(이우), ie(이에), üe(위에), er(얼), an(안), en(언), in(인), un(운), ün(윈), ang(앙), eng(엉), ing(잉), ong(옹)', desc: 'Vowels and endings' },
+            { type: 'Tones (성조)', items: '1성(¯), 2성(ˊ), 3성(ˇ), 4성(ˋ)', desc: 'ā(아-), á(아?), ǎ(아아), à(앗!)' },
             { type: 'Basic Rules', items: 'Pinyin (한어병음)', desc: 'Phonetic system for Mandarin' }
         ],
-        // 중국어 단어장
+        // 중국어 단어장 (한글 발음)
         vocabulary: [
             { word: '学生 (Xuésheng)', translation: '학생', pronunciation: '[슈에셩]' },
             { word: '老师 (Lǎoshī)', translation: '선생님', pronunciation: '[라오싀]' },
@@ -130,7 +130,7 @@ const languageData = {
             { rule: '在 (Zài)', description: 'Continuous action / location', example: '我在看书 (I am reading)' },
             { rule: '不 / 没 (Bù / Méi)', description: 'Negation prefixes', example: '我不去 / 我没有' }
         ],
-        // 중국어 회화
+        // 중국어 회화 (한글 발음)
         conversation: [
             { phrase: '好久不见 (Hǎojiǔ bùjiàn)', translation: '오랜만이에요', pronunciation: '[하오지우 부지엔]' },
             { phrase: '你吃饭了吗? (Nǐ chīfànle ma?)', translation: '밥 먹었니?', pronunciation: '[니 츠판러 마?]' },
@@ -146,14 +146,14 @@ const languageData = {
         title: 'Japanese (日本語)',
         flag: '🇯🇵',
         color: '#ec4899',
-        // 일본어 기초: 히라가나, 가타카나
+        // 일본어 기초 (한글 발음 상세화)
         basics: [
-            { type: 'Hiragana (히라가나)', items: 'あ, い, う, え, お, か, 기, 쿠, け, こ, さ, し, す, せ, そ...', desc: 'Used for grammar and native words' },
-            { type: 'Katakana (가타카나)', items: 'ア, イ, ウ, エ, オ, カ, キ, ク, ケ, コ, サ, シ, ス, セ, ソ...', desc: 'Used for foreign loanwords' },
-            { type: 'Kanji (한자)', items: '日, 月, 火, 水, 木, 金, 土...', desc: 'Adopted Chinese characters' },
+            { type: 'Hiragana (히라가나)', items: 'あ(아), い(이), う(우), え(에), お(오), か(카), き(키), く(쿠), け(케), こ(코)...', desc: 'Used for grammar and native words' },
+            { type: 'Katakana (가타카나)', items: 'ア(아), イ(이), ウ(우), エ(에), オ(오), カ(카), キ(키), ク(쿠), 케(케), 코(코)...', desc: 'Used for foreign loanwords' },
+            { type: 'Kanji (한자)', items: '日(히/니치), 月(츠키/게츠), 火(히/카), 水(미즈/스이)...', desc: 'Adopted Chinese characters' },
             { type: 'Tones (악센트)', items: 'High and Low Pitch', desc: 'Distinctive pitch patterns' }
         ],
-        // 일본어 단어장
+        // 일본어 단어장 (한글 발음)
         vocabulary: [
             { word: '夢 (Yume)', translation: '꿈', pronunciation: '[유메]' },
             { word: '希望 (Kibō)', translation: '희망', pronunciation: '[키보-]' },
@@ -163,8 +163,8 @@ const languageData = {
             { word: '友達 (Tomodachi)', translation: '친구', pronunciation: '[토모다치]' },
             { word: '未来 (Mirai)', translation: '미래', pronunciation: '[미라이]' },
             { word: '旅行 (Ryokō)', translation: '여행', pronunciation: '[료코-]' },
-            { word: '世界 (Sekai)', translation: '세계', pronunciation: '[세카이]' },
-            { word: '平和 (Heiwa)', translation: '평화', pronunciation: '[헤이와]' }
+            { word: '세계 (Sekai)', translation: '세계', pronunciation: '[세카이]' },
+            { word: '평화 (Heiwa)', translation: '평화', pronunciation: '[헤이와]' }
         ],
         // 일본어 문법
         grammar: [
@@ -175,7 +175,7 @@ const languageData = {
             { rule: '에 / 로 (Ni / He)', description: 'Destination/Direction', example: '日本に行きます (Go to Japan)' },
             { rule: '~ている (Te-iru)', description: 'Ongoing action', example: '勉強している (Am studying)' }
         ],
-        // 일본어 회화
+        // 일본어 회화 (한글 발음)
         conversation: [
             { phrase: 'お疲れ様です', translation: '수고하셨습니다', pronunciation: '[오츠카레사마데스]' },
             { phrase: 'はじめまして', translation: '처음 뵙겠습니다', pronunciation: '[하지메마시테]' },
@@ -183,7 +183,7 @@ const languageData = {
             { phrase: 'いくらですか? (Ikura desu ka?)', translation: '얼마입니까?', pronunciation: '[이크라데스까]' },
             { phrase: 'すみません (Sumimasen)', translation: '실례합니다 / 저기요', pronunciation: '[스미마셍]' },
             { phrase: 'おいしいです (Oishii desu)', translation: '맛있습니다', pronunciation: '[오이시이데스]' },
-            { phrase: 'また会いましょう (Mata aimashō)', translation: '또 만나요', pronunciation: '[마타 아이마쇼-]' },
+            { phrase: '또한 만나요 (Mata aimashō)', translation: '또 만나요', pronunciation: '[마타 아이마쇼-]' },
             { phrase: '助けてください (Tasukete kudasai)', translation: '도와주세요', pronunciation: '[타스케테 쿠다사이]' }
         ]
     }
