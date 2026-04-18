@@ -12,9 +12,9 @@ const languageData = {
             { type: '모음', items: 'ㅏ, ㅑ, ㅓ, ㅕ, ㅗ, ㅛ, ㅜ, ㅠ, ㅡ, ㅣ', desc: '한글의 기본이 되는 10개의 모음입니다.' }
         ],
         numbers: [
-            { num: '1~10 (Sino)', word: '일, 이, 삼, 사, 오, 육, 칠, 팔, 구, 십', pronunciation: '[Il, I, Sam, Sa...]' },
-            { num: '1~10 (Native)', word: '하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열', pronunciation: '[Hana, Dul, Set...]' },
-            { num: '20~90 (Native)', word: '스물(20), 서른(30), 마흔(40), 쉰(50), 예순(60), 일흔(70), 여든(80), 아흔(90)', pronunciation: '[Native tens]' },
+            { num: '1~10 (Sino)', word: '일, 이, 삼, 사, 오, 육, 칠, 팔, 구, 십', pronunciation: '[Il, I, Sam, Sa, O, Yuk, Chil, Pal, Gu, Sip]' },
+            { num: '1~10 (Native)', word: '하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열', pronunciation: '[Hana, Dul, Set, Net, Daseot, Yeoseot, Ilgob, Yeodeolb, Ahob, Yeol]' },
+            { num: '20~90 (Native)', word: '스물(20), 서른(30), 마흔(40), 쉰(50), 예순(60), 일흔(70), 여든(80), 아흔(90)', pronunciation: '[Seumul, Seoreun, Maheun, Swin, Yesun, Ilheun, Yeodeun, Aheun]' },
             { num: '100', word: '백 (Baek)', pronunciation: '[10^2]' },
             { num: '1,000', word: '천 (Cheon)', pronunciation: '[10^3]' },
             { num: '10,000', word: '만 (Man)', pronunciation: '[10^4]' },
@@ -29,7 +29,7 @@ const languageData = {
             { rule: '-은/는', description: '문장의 주제나 대상을 나타내는 보조사', example: '저는 학생입니다.' }
         ],
         deepGrammar: [
-            { title: '한국어 숫자 체계 완벽 정리', content: '한국어는 수량이나 나이를 셀 때는 "순우리말(하나,둘...)"을 쓰고, 날짜나 돈, 수학적인 수치를 말할 때는 "한자어(일,이...)"를 씁니다.', tip: '나이는 "스무 살", 가격은 "이만 원"이라고 구분해서 말해보세요!' },
+            { title: '한국어 숫자 체계 완벽 정리', content: '한국어는 수량이나 나이를 셀 때는 "순우리말(하나, 둘, 셋, 넷 등)"을 쓰고, 날짜나 돈, 수학적인 수치를 말할 때는 "한자어(일, 이, 삼, 사 등)"를 씁니다.', tip: '나이는 "스무 살", 가격은 "이만 원"이라고 구분해서 말해보세요!' },
             { title: '4자리 단위 끊어 읽기', content: '한국어는 10,000(만)을 기준으로 단위가 바뀝니다. 1,0000(만), 1,0000,0000(억) 순서로 4자리마다 콤마를 찍는다고 생각하면 쉽습니다.', tip: '100,000은 "십만" (10 + 만) 입니다.' }
         ],
         conversation: [
@@ -41,12 +41,12 @@ const languageData = {
         flag: '🇺🇸',
         color: '#3b82f6',
         basics: [
-            { type: 'Alphabet', items: 'A, B, C, D, E...', desc: '영어의 기초 알파벳입니다.' }
+            { type: 'Alphabet', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '영어의 기초 알파벳 26자입니다.' }
         ],
         numbers: [
-            { num: '1~12', word: 'One, Two, Three... Ten, Eleven, Twelve', pronunciation: '[1~12 고유 명칭]' },
-            { num: '13~19', word: 'Thirteen, Fourteen... Nineteen', pronunciation: '[-teen 접미사]' },
-            { num: '20~90', word: 'Twenty, Thirty, Forty... Ninety', pronunciation: '[-ty 접미사]' },
+            { num: '1~12', word: 'One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve', pronunciation: '[1~12 고유 명칭]' },
+            { num: '13~19', word: 'Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen', pronunciation: '[-teen 접미사]' },
+            { num: '20~90', word: 'Twenty, Thirty, Forty, Fifty, Sixty, Seventy, Eighty, Ninety', pronunciation: '[-ty 접미사]' },
             { num: '100', word: 'One Hundred', pronunciation: '[백]' },
             { num: '1,000', word: 'One Thousand', pronunciation: '[천]' },
             { num: '1,000,000', word: 'One Million', pronunciation: '[백만 / 10^6]' },
@@ -61,7 +61,7 @@ const languageData = {
         ],
         deepGrammar: [
             { title: '3자리 콤마 끊어 읽기', content: '영어는 3자리(Thousand, Million, Billion)마다 단위가 바뀝니다. 한국어의 4자리 단위와 가장 크게 다른 점입니다.', tip: '10,000은 "Ten thousand", 1,000,000은 "One million"!' },
-            { title: 'Billion vs Trillion', content: '비즈니스 세계에서 Billion은 10억, Trillion은 1조를 의미합니다. 특히 국가 예산이나 기업 가치를 말할 때 자주 쓰입니다.', tip: 'M은 Million(백만), B는 Billion(십억)의 약자로 자주 쓰여요.' }
+            { title: 'Billion vs Trillion', content: '비즈니스 세계에서 Billion은 10억, Trillion은 1조를 의미합니다. 국가 예산이나 기업 가치를 말할 때 자주 쓰입니다.', tip: 'M은 Million(백만), B는 Billion(십억)의 약자로 자주 쓰여요.' }
         ],
         conversation: [
             { phrase: 'How much is it in total?', translation: '총액이 얼마인가요?', pronunciation: '[하우 머치 이즈 잇 인 토털?]' }
@@ -75,8 +75,8 @@ const languageData = {
             { type: 'Pinyin', items: 'a, o, e, i, u, ü', desc: '중국어 발음 기호입니다.' }
         ],
         numbers: [
-            { num: '1~10', word: '一(yī), 二(èr), 三(sān), 四(sì)... 十(shí)', pronunciation: '[이, 얼, 싼, 쓰... 싀]' },
-            { num: '11~99', word: '十一(11), 二十(20), 三十五(35)...', pronunciation: '[조합형 숫자]' },
+            { num: '1~10', word: '一(yī), 二(èr), 三(sān), 四(sì), 五(wǔ), 六(liù), 七(qī), 八(bā), 九(jiǔ), 十(shí)', pronunciation: '[이, 얼, 싼, 쓰, 우, 리우, 치, 빠, 지우, 싀]' },
+            { num: '11~99', word: '十一(11), 二十(20), 三十五(35), 四十二(42), 五十六(56), 六十七(67), 七十八(78), 八十九(89), 九十九(99)', pronunciation: '[조합형 숫자]' },
             { num: '100', word: '百 (Bǎi)', pronunciation: '[빠이]' },
             { num: '1,000', word: '千 (Qiān)', pronunciation: '[치엔]' },
             { num: '10,000', word: '万 (Wàn)', pronunciation: '[완]' },
@@ -102,11 +102,11 @@ const languageData = {
         flag: '🇯🇵',
         color: '#ec4899',
         basics: [
-            { type: 'Hiragana', items: 'あ, い, う, 에, 오...', desc: '일본어 기본 문자입니다.' }
+            { type: 'Hiragana', items: 'あ, い, う, え, お, か, き, く, け, こ', desc: '일본어 기본 문자(50음도)의 시작입니다.' }
         ],
         numbers: [
-            { num: '1~10', word: '一, 二, 三, 四, 五, 六, 七, 八, 九, 十', pronunciation: '[이치, 니, 산, 욘, 고... 쥬-]' },
-            { num: '10~90', word: '十(10), 二十(20), 三十(30)... 九十(90)', pronunciation: '[쥬-, 니쥬-, 산쥬-...]' },
+            { num: '1~10', word: '一, 二, 三, 四, 五, 六, 七, 八, 九, 十', pronunciation: '[이치, 니, 산, 욘, 고, 로쿠, 나나, 하치, 큐, 쥬-]' },
+            { num: '10~90', word: '十(10), 二十(20), 三十(30), 四十(40), 五十(50), 六十(60), 七十(70), 八十(80), 九十(90)', pronunciation: '[쥬-, 니쥬-, 산쥬-, 욘쥬-, 고쥬-, 로쿠쥬-, 나나쥬-, 하치쥬-, 큐쥬-]' },
             { num: '100', word: '百 (Hyaku)', pronunciation: '[햐쿠]' },
             { num: '1,000', word: '千 (Sen)', pronunciation: '[센]' },
             { num: '10,000', word: '万 (Man)', pronunciation: '[만]' },
@@ -132,12 +132,12 @@ const languageData = {
         flag: '🇪🇸',
         color: '#f59e0b',
         basics: [
-            { type: 'Alfabeto', items: 'A, B, C, Ñ...', desc: '스페인어 알파벳입니다.' }
+            { type: 'Alfabeto', items: 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z', desc: '스페인어 알파벳 27자입니다.' }
         ],
         numbers: [
-            { num: '1~10', word: 'Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez', pronunciation: '[우노, 도스... 디에스]' },
-            { num: '11~20', word: 'Once(11), Doce(12), Trece(13), Catorce(14), Quince(15)... Veinte(20)', pronunciation: '[온쎄, 도쎄... 베인떼]' },
-            { num: '30~90', word: 'Treinta(30), Cuarenta(40), Cincuenta(50)... Noventa(90)', pronunciation: '[뜨레인따, 꾸아렌따...]' },
+            { num: '1~10', word: 'Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez', pronunciation: '[우노, 도스, 뜨레스, 꾸아뜨로, 씽꼬, 세이스, 씨에떼, 오초, 누에베, 디에스]' },
+            { num: '11~20', word: 'Once(11), Doce(12), Trece(13), Catorce(14), Quince(15), Dieciséis(16), Diecisiete(17), Dieciocho(18), Diecinueve(19), Veinte(20)', pronunciation: '[온쎄, 도쎄, 뜨레쎄, 까또르쎄, 낀쎄, 디에씨세이스, 디에씨씨에떼, 디에씨오초, 디에씨누에베, 베인떼]' },
+            { num: '30~90', word: 'Treinta(30), Cuarenta(40), Cincuenta(50), Sesenta(60), Setenta(70), Ochenta(80), Noventa(90)', pronunciation: '[뜨레인따, 꾸아렌따, 씽꾸엔따, 세쎈따, 세뗀따, 오첸따, 노벤따]' },
             { num: '100', word: 'Cien / Ciento', pronunciation: '[씨엔]' },
             { num: '1,000', word: 'Mil', pronunciation: '[밀]' },
             { num: '1,000,000', word: 'Un millón', pronunciation: '[운 밀리온]' },
